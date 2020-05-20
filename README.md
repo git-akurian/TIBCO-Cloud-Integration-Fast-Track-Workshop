@@ -7,7 +7,7 @@ During this COVID crisis, a lot of storefronts are closed. Retailers are increas
 So, how can a retailer change their established business process to provide an excellent customer experience and that too in a very short span of time?   
 ### What can the retailer do?  
 They can 'automatically' waive the shipping fees for their loyal customers !  
-Helps customers save time (no need to contact customer service via phone or chat) as well as, literally save money!
+Helps customers save time *(no need to contact customer service via phone or chat)* as well as, literally save money!
 
 ### What should the retailer do to provide this customer experience for their loyal customers ?  
 They have to
@@ -36,9 +36,8 @@ The entire process of providing that better customer experience can be achieved 
 *[Business Requirement to API Endpoint is collaborative]*
 2) Simple easy to use tool set. 
 *[All capabilites are visual, drag-drop and easy to understand]*
-3) Simple easy to use tool set. *[All capabilites are visual, drag-drop and easy to understand]*
-4) Faster Time to Market. 
-*[Concept to Delivery using initiutive tools for multiple personas (Integration Expert, Business Analyst,Citizen Developer]*
-5) Strong Open Source Integration. 
+3) Faster Time to Market. 
+*[Concept to Delivery using initiutive tools for multiple personas]*
+4) Strong Open Source Integration. 
 *[build on GoLang,Export/Run node.js,Swagger Defs....]*
 
