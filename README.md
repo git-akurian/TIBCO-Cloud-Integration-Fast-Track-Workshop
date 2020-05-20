@@ -41,7 +41,7 @@ The entire process of providing that better customer experience can be achieved 
 2) Simple easy to use tool set. 
 *[All capabilites are visual, drag-drop and easy to understand]*
 3) Faster Time to Market. 
-*[Concept to Delivery using initiutive tools for multiple personas from build to test to prod in easy steps]*
+*[Concept to Delivery using intuitive tools for multiple personas from build to test to prod in easy steps]*
 4) Strong Open Source Integration. 
 *[Single TCI platform that has multiple opensource inclusions like node.js,Swagger Specs,CICD tools etc....]*
 
