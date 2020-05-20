@@ -41,3 +41,5 @@ The entire process of providing that better customer experience can be achieved 
 4) Strong Open Source Integration. 
 *[build on GoLang,Export/Run node.js,Swagger Defs....]*
 
+## The process flow for this workshop
+![FlowChart](/images/FlowChart.jpg)
