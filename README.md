@@ -9,8 +9,8 @@ During this COVID crisis, a lot of storefronts are closed. Retailers are increas
 So, how can a retailer change their established business process to provide an excellent customer experience and that too in a very short span of time?   
 
 ### Can the retailer do 'something special' for a loyal customer?  
-They can 'automatically' waive the shipping fees for their loyal customers !  
-Helps customers save time and money *(no need to contact customer service via phone or chat)*
+As an example, they can 'automatically' **waive the shipping fees for their loyal customers.**. 
+Customers will save time and money *(no need to contact customer service via phone or chat)*.  
 Retailer will also save on customer support esp. when their resources are spread pretty thin during this crisis time.
 
 ### How can this business requirement of enchancing the customer experience be achieved?  
@@ -25,8 +25,8 @@ Retailer has to
 *[Emails/Mobile notifications with the extra steps that company did to help customer during the COVID crisis]*   
 
 ### Translating the Business Requirement into a Technical Design
-The entire process of providing that better customer experience can be achieved using TIBCO Cloud Integration Capabilities in 4 steps
-1) Understanding and defining the inputs from Customer and figuring out the responses to Customer. 
+The entire process of providing that better customer experience can be achieved using TIBCO Cloud Integration Capabilities in 4 steps.  
+1) Understanding and Defining the inputs from Customer and figuring out the Responses to Customer. 
 *[API Specs, Creating mock apps from API Specs]*
 2) Building a new microservice using the API Spec to intelligently decide if customer qualifies for an **automated** exception. 
 *[API Led Integrations from a web browser using visual,drag-drop features]*
@@ -43,7 +43,7 @@ The entire process of providing that better customer experience can be achieved 
 3) Faster Time to Market. 
 *[Concept to Delivery using initiutive tools for multiple personas from build to test to prod in easy steps]*
 4) Strong Open Source Integration. 
-*[Single TCI platform that has multiple opensource inclusions like GoLang,node.js,Swagger Specs,CICD etc....]*
+*[Single TCI platform that has multiple opensource inclusions like node.js,Swagger Specs,CICD tools etc....]*
 
 ## The process flow for this workshop
 ![FlowChart](/images/FlowChart.jpg)
