@@ -5,8 +5,9 @@ Event Details: https://www.tibco.com/events/breakfast-club-data-tibco-cloud-inte
 ## Workshop Overview
 During this COVID crisis, a lot of storefronts are closed. Retailers are increasingly trying to manage sales through their websites to compensate. For a customer like myself, I would love to have an experience that is truly exceptional.  
 So, how can a retailer change their established business process to provide an excellent customer experience and that too in a very short span of time?   
-### What can the retailer can do ?  
-They can 'automatically' waive the shipping fees for their loyal customers ! Helps customers save time (for contacting customer service via phone or chat) as well as, literally save money !
+### What can the retailer do?  
+They can 'automatically' waive the shipping fees for their loyal customers !  
+Helps customers save time (no need to contact customer service via phone or chat) as well as, literally save money!
 
 ### What should the retailer do to provide this customer experience for their loyal customers ?  
 They have to
