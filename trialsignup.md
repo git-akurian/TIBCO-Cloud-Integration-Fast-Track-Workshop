@@ -24,4 +24,4 @@ Add Spotfire and Events to your trial by clicking on the **Free trial** button.
 
 That's it!  You're ready for the workshop.
 
-Next step: [Go Back to the Introduction Page here ](README.md)
+Next step: [Go Back to the Introduction Page here ](https://github.com/git-akurian/TIBCO-Cloud-Integration-Virtual-Workshop/blob/master/README.md#workshop-overview)
