@@ -24,4 +24,4 @@ Add Spotfire and Events to your trial by clicking on the **Free trial** button.
 
 That's it!  You're ready for the workshop.
 
-Next step: [Start the Workshop with Importing an API Spec](README.md)
+Next step: [Go Back to the Introduction Page here ](README.md)
