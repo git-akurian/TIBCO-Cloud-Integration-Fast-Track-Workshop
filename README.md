@@ -53,4 +53,4 @@ The entire process of providing that better customer experience can be achieved 
 ![FlowChart](/images/FlowChart.jpg)
 
 ## Let's begin the process by collaborating with Business Teams on 'Special COVID Shipment Waiver' project
-### Next step: [Collaboration starts from defining and testing the API Spec visually 'here'](0.apispec.md)
+### Next step: [Collaboration starts from defining and testing the API Spec visually](0.apispec.md)
