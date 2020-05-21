@@ -1,0 +1,132 @@
+{
+    "name": "ak_jt_tci_wkshop_particpants_app",
+    "description": " ",
+    "version": "1.0",
+    "type": "flogo",
+    "resources": {
+        "physicalMemory": 1024,
+        "totalMemory": 4096,
+        "cpuQuota": 25
+    },
+    "endpoints": [
+        {
+            "name": "AppHealthCheck",
+            "pingable": true,
+            "protocol": "http",
+            "port": "7777",
+            "type": "private",
+            "ping": "/ping"
+        },
+        {
+            "protocol": "http",
+            "port": "9001",
+            "spec": {
+                "name": "ak_jt_tci_wkshop_particpants_app",
+                "version": "1.0.0"
+            },
+            "title": "ReceiveHTTPMessage",
+            "swagger": {
+                "swagger": "2.0",
+                "info": {
+                    "title": "ak_jt_tci_wkshop_particpants_app",
+                    "version": "1.0.0",
+                    "description": " "
+                },
+                "paths": {
+                    "/shipmentwaiver": {
+                        "post": {
+                            "summary": "shipmentwaiverflow",
+                            "operationId": "post_shipmentwaiver",
+                            "parameters": [
+                                {
+                                    "name": "body",
+                                    "in": "body",
+                                    "description": "request body parameter",
+                                    "required": true,
+                                    "schema": {
+                                        "type": "object",
+                                        "properties": {
+                                            "customer": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "loginid": {
+                                                        "type": "string",
+                                                        "format": "email",
+                                                        "default": "jtamboli@tibco.com"
+                                                    }
+                                                }
+                                            },
+                                            "order": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "string",
+                                                        "default": "ghhg"
+                                                    },
+                                                    "shipping amount": {
+                                                        "type": "integer",
+                                                        "default": 10
+                                                    },
+                                                    "Total amount": {
+                                                        "type": "integer",
+                                                        "default": 20
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "responses": {
+                                "200": {
+                                    "schema": {
+                                        "type": "object",
+                                        "properties": {
+                                            "OrderSummary": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "Message": {
+                                                        "type": "string",
+                                                        "default": "3188441"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "propertyPrefix": "TCI_FLOGO_USER_",
+    "properties": [
+        {
+            "name": "MySQL.tci_mysql_aws.Host",
+            "datatype": "string",
+            "default": "mysqltci.ccvct4moy0lt.us-east-1.rds.amazonaws.com"
+        },
+        {
+            "name": "MySQL.tci_mysql_aws.Port",
+            "datatype": "number",
+            "default": "3306"
+        },
+        {
+            "name": "MySQL.tci_mysql_aws.DatabaseName",
+            "datatype": "string",
+            "default": "CustomerDB"
+        },
+        {
+            "name": "MySQL.tci_mysql_aws.User",
+            "datatype": "string",
+            "default": "admin123"
+        },
+        {
+            "name": "MySQL.tci_mysql_aws.Password",
+            "datatype": "password",
+            "default": "admin123"
+        }
+    ]
+}

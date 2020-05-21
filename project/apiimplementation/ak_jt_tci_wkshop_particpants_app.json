@@ -1,0 +1,712 @@
+{
+    "imports": [
+        "github.com/project-flogo/flow",
+        "git.tibco.com/git/product/ipaas/wi-mysql.git/src/app/MySQL/activity/query",
+        "git.tibco.com/git/product/ipaas/wi-contrib.git/contributions/General/activity/log",
+        "git.tibco.com/git/product/ipaas/wi-contrib.git/contributions/General/activity/rest",
+        "emea-swi-svn.emea.tibco.com/svn/Ariel/tci-liveapps/trunk/LiveApps/activity/create",
+        "emea-swi-svn.emea.tibco.com/svn/Ariel/tci-liveapps/trunk/LiveApps/activity/update",
+        "github.com/project-flogo/contrib/activity/actreturn",
+        "rest_1 git.tibco.com/git/product/ipaas/wi-contrib.git/contributions/General/trigger/rest",
+        "github.com/project-flogo/contrib/function/string",
+        "github.com/project-flogo/contrib/function/array"
+    ],
+    "name": "ak_jt_tci_wkshop_particpants_app",
+    "description": " ",
+    "version": "1.1.0",
+    "type": "flogo:app",
+    "appModel": "1.1.1",
+    "triggers": [
+        {
+            "ref": "#rest_1",
+            "name": "tibco-wi-rest",
+            "description": "Simple REST Trigger",
+            "settings": {
+                "port": 9001,
+                "APISpecUpdate": true,
+                "swagger": {
+                    "filename": "shipmentwaiver-tci-wkshop-1.json",
+                    "content": "data:application/json;base64,ewogICJzd2FnZ2VyIjogIjIuMCIsCiAgImluZm8iOiB7CiAgICAidmVyc2lvbiI6ICIxLjAiLAogICAgInRpdGxlIjogImFrX2p0X3RjaV93b3Jrc2hvcCIsCiAgICAieC1sYXN0TW9kaWZpZWQiOiAiMjAyMC0wNS0yMVQxNTozNzoyNy4wMDBaIgogIH0sCiAgInBhdGhzIjogewogICAgIi9zaGlwbWVudHdhaXZlciI6IHsKICAgICAgInBvc3QiOiB7CiAgICAgICAgInByb2R1Y2VzIjogWwogICAgICAgICAgImFwcGxpY2F0aW9uL2pzb24iCiAgICAgICAgXSwKICAgICAgICAicmVzcG9uc2VzIjogewogICAgICAgICAgIjIwMCI6IHsKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIlN1Y2Nlc3MgcmVzcG9uc2UiLAogICAgICAgICAgICAic2NoZW1hIjogewogICAgICAgICAgICAgICIkcmVmIjogIiMvZGVmaW5pdGlvbnMvc2hpcG1lbnR3YWl2ZXJyZXNwb25zZSIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgImV4YW1wbGVzIjogewogICAgICAgICAgICAgICJhcHBsaWNhdGlvbi9qc29uIjogewogICAgICAgICAgICAgICAgIk9yZGVyU3VtbWFyeSI6IHsKICAgICAgICAgICAgICAgICAgIk1lc3NhZ2UiOiAiMzE4ODQ0MSIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgIH0KICAgICAgICB9LAogICAgICAgICJwYXJhbWV0ZXJzIjogWwogICAgICAgICAgewogICAgICAgICAgICAibmFtZSI6ICJib2R5IiwKICAgICAgICAgICAgImluIjogImJvZHkiLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAic2hpcG1lbnQgd2FpdmVyIHJlcXVlc3QiLAogICAgICAgICAgICAic2NoZW1hIjogewogICAgICAgICAgICAgICIkcmVmIjogIiMvZGVmaW5pdGlvbnMvc2hpcG1lbnR3YWl2ZXJyZXF1ZXN0IgogICAgICAgICAgICB9CiAgICAgICAgICB9CiAgICAgICAgXSwKICAgICAgICAib3BlcmF0aW9uSWQiOiAicG9zdFNhbGVzb3JkZXIiLAogICAgICAgICJjb25zdW1lcyI6IFsKICAgICAgICAgICJhcHBsaWNhdGlvbi9qc29uIgogICAgICAgIF0KICAgICAgfQogICAgfQogIH0sCiAgImRlZmluaXRpb25zIjogewogICAgInNhbGVzb3JkZXJyZXF1ZXN0IjogewogICAgICAidHlwZSI6ICJvYmplY3QiLAogICAgICAicHJvcGVydGllcyI6IHsKICAgICAgICAidXVpZCI6IHsKICAgICAgICAgICJ0eXBlIjogInN0cmluZyIsCiAgICAgICAgICAiZGVmYXVsdCI6ICJzMSIKICAgICAgICB9LAogICAgICAgICJJdGVtSWQiOiB7CiAgICAgICAgICAidHlwZSI6ICJzdHJpbmciLAogICAgICAgICAgImRlZmF1bHQiOiAiMDAxIgogICAgICAgIH0sCiAgICAgICAgIkl0ZW1jb3VudCI6IHsKICAgICAgICAgICJ0eXBlIjogImludGVnZXIiLAogICAgICAgICAgImRlZmF1bHQiOiAzCiAgICAgICAgfSwKICAgICAgICAiY2xpZW50dGltZXN0YW1wIjogewogICAgICAgICAgInR5cGUiOiAic3RyaW5nIiwKICAgICAgICAgICJkZWZhdWx0IjogIjIwMjAtMDItMDMgMDQ6MzI6MzguOTQwIgogICAgICAgIH0KICAgICAgfQogICAgfSwKICAgICJzaGlwbWVudHdhaXZlcnJlcXVlc3QiOiB7CiAgICAgICJ0eXBlIjogIm9iamVjdCIsCiAgICAgICJwcm9wZXJ0aWVzIjogewogICAgICAgICJjdXN0b21lciI6IHsKICAgICAgICAgICJ0eXBlIjogIm9iamVjdCIsCiAgICAgICAgICAicHJvcGVydGllcyI6IHsKICAgICAgICAgICAgImxvZ2luaWQiOiB7CiAgICAgICAgICAgICAgInR5cGUiOiAic3RyaW5nIiwKICAgICAgICAgICAgICAiZm9ybWF0IjogImVtYWlsIiwKICAgICAgICAgICAgICAiZGVmYXVsdCI6ICJqdGFtYm9saUB0aWJjby5jb20iCiAgICAgICAgICAgIH0KICAgICAgICAgIH0KICAgICAgICB9LAogICAgICAgICJvcmRlciI6IHsKICAgICAgICAgICJ0eXBlIjogIm9iamVjdCIsCiAgICAgICAgICAicHJvcGVydGllcyI6IHsKICAgICAgICAgICAgImlkIjogewogICAgICAgICAgICAgICJ0eXBlIjogInN0cmluZyIsCiAgICAgICAgICAgICAgImRlZmF1bHQiOiAiZ2hoZyIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgInNoaXBwaW5nIGFtb3VudCI6IHsKICAgICAgICAgICAgICAidHlwZSI6ICJpbnRlZ2VyIiwKICAgICAgICAgICAgICAiZGVmYXVsdCI6IDEwCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgICJUb3RhbCBhbW91bnQiOiB7CiAgICAgICAgICAgICAgInR5cGUiOiAiaW50ZWdlciIsCiAgICAgICAgICAgICAgImRlZmF1bHQiOiAyMAogICAgICAgICAgICB9CiAgICAgICAgICB9CiAgICAgICAgfQogICAgICB9CiAgICB9LAogICAgIkdpdmVOZXdTY2hlbWFOYW1lSGVyZSI6IHsKICAgICAgInR5cGUiOiAib2JqZWN0IiwKICAgICAgInByb3BlcnRpZXMiOiB7CiAgICAgICAgIk9yZGVyU3VtbWFyeSI6IHsKICAgICAgICAgICJ0eXBlIjogIm9iamVjdCIsCiAgICAgICAgICAicHJvcGVydGllcyI6IHsKICAgICAgICAgICAgIk1lc3NhZ2UiOiB7CiAgICAgICAgICAgICAgInR5cGUiOiAic3RyaW5nIiwKICAgICAgICAgICAgICAiZGVmYXVsdCI6ICIzMTg4NDQxIgogICAgICAgICAgICB9CiAgICAgICAgICB9CiAgICAgICAgfQogICAgICB9CiAgICB9LAogICAgInNoaXBtZW50d2FpdmVycmVzcG9uc2UiOiB7CiAgICAgICJ0eXBlIjogIm9iamVjdCIsCiAgICAgICJwcm9wZXJ0aWVzIjogewogICAgICAgICJPcmRlclN1bW1hcnkiOiB7CiAgICAgICAgICAidHlwZSI6ICJvYmplY3QiLAogICAgICAgICAgInByb3BlcnRpZXMiOiB7CiAgICAgICAgICAgICJNZXNzYWdlIjogewogICAgICAgICAgICAgICJ0eXBlIjogInN0cmluZyIsCiAgICAgICAgICAgICAgImRlZmF1bHQiOiAiMzE4ODQ0MSIKICAgICAgICAgICAgfQogICAgICAgICAgfQogICAgICAgIH0KICAgICAgfQogICAgfQogIH0KfQ=="
+                },
+                "secureConnection": false,
+                "serverKey": "",
+                "caCertificate": ""
+            },
+            "id": "ReceiveHTTPMessage",
+            "handlers": [
+                {
+                    "description": "",
+                    "settings": {
+                        "APISpecPath": "/shipmentwaiver",
+                        "Method": "POST",
+                        "Path": "/shipmentwaiver",
+                        "OutputValidation": false
+                    },
+                    "action": {
+                        "ref": "github.com/project-flogo/flow",
+                        "settings": {
+                            "flowURI": "res://flow:shipmentwaiverflow"
+                        },
+                        "input": {
+                            "customer": {
+                                "mapping": {
+                                    "loginid": "=$.body.customer.loginid"
+                                }
+                            },
+                            "order": {
+                                "mapping": {
+                                    "id": "=$.body.order.id",
+                                    "shipping amount": "=$.body.order[\"shipping amount\"]",
+                                    "Total amount": "=$.body.order[\"Total amount\"]"
+                                }
+                            }
+                        },
+                        "output": {
+                            "responseBody": {
+                                "mapping": {
+                                    "body": "=string.concat(\"Order Placed & shipment Waived for Order number: \",string.tostring($.OrderNumber))"
+                                }
+                            }
+                        }
+                    },
+                    "reply": {
+                        "code": 200,
+                        "configureResponseCodes": true,
+                        "message": ""
+                    },
+                    "schemas": {
+                        "reply": {
+                            "responseCodesSchema": {
+                                "type": "json",
+                                "value": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"number\"},\"responseType\":{\"type\":\"string\"},\"responseSchema\":{\"type\":\"string\"}}}}",
+                                "fe_metadata": "[{\"code\":200,\"responseType\":\"object\",\"responseSchema\":\"{\\\"type\\\":\\\"object\\\",\\\"properties\\\":{\\\"OrderSummary\\\":{\\\"type\\\":\\\"object\\\",\\\"properties\\\":{\\\"Message\\\":{\\\"type\\\":\\\"string\\\",\\\"default\\\":\\\"3188441\\\"}}}}}\"}]"
+                            }
+                        },
+                        "output": {
+                            "body": {
+                                "type": "json",
+                                "value": "{\"type\":\"object\",\"properties\":{\"customer\":{\"type\":\"object\",\"properties\":{\"loginid\":{\"type\":\"string\",\"format\":\"email\",\"default\":\"jtamboli@tibco.com\"}}},\"order\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\",\"default\":\"ghhg\"},\"shipping amount\":{\"type\":\"integer\",\"default\":10},\"Total amount\":{\"type\":\"integer\",\"default\":20}}}}}",
+                                "fe_metadata": "{\"type\":\"object\",\"properties\":{\"customer\":{\"type\":\"object\",\"properties\":{\"loginid\":{\"type\":\"string\",\"format\":\"email\",\"default\":\"jtamboli@tibco.com\"}}},\"order\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\",\"default\":\"ghhg\"},\"shipping amount\":{\"type\":\"integer\",\"default\":10},\"Total amount\":{\"type\":\"integer\",\"default\":20}}}}}"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "resources": [
+        {
+            "id": "flow:shipmentwaiverflow",
+            "data": {
+                "name": "shipmentwaiverflow",
+                "description": "",
+                "links": [
+                    {
+                        "id": 1,
+                        "from": "FetchCustomerDetails",
+                        "to": "LogCRMOutput",
+                        "type": "default"
+                    },
+                    {
+                        "id": 2,
+                        "from": "LogCRMOutput",
+                        "to": "InvokeOrderService",
+                        "type": "default"
+                    },
+                    {
+                        "id": 3,
+                        "from": "InvokeOrderService",
+                        "to": "LogOrderOutput",
+                        "type": "default"
+                    },
+                    {
+                        "id": 4,
+                        "from": "LogOrderOutput",
+                        "to": "InvokeMarketoService",
+                        "type": "default"
+                    },
+                    {
+                        "id": 5,
+                        "from": "InvokeMarketoService",
+                        "to": "LogMarketoOutput",
+                        "type": "default"
+                    },
+                    {
+                        "id": 6,
+                        "from": "LogMarketoOutput",
+                        "to": "CreateShipmentWaiverCase",
+                        "type": "default"
+                    },
+                    {
+                        "id": 7,
+                        "from": "CreateShipmentWaiverCase",
+                        "to": "LogLAOutput",
+                        "type": "default"
+                    },
+                    {
+                        "id": 8,
+                        "from": "LogLAOutput",
+                        "to": "LiveAppsPerformCaseAction",
+                        "type": "default"
+                    },
+                    {
+                        "id": 9,
+                        "from": "LiveAppsPerformCaseAction",
+                        "to": "Return",
+                        "type": "default"
+                    }
+                ],
+                "tasks": [
+                    {
+                        "id": "FetchCustomerDetails",
+                        "name": "FetchCustomerDetails",
+                        "description": "This activity executes SQL queries on a database",
+                        "activity": {
+                            "ref": "#query",
+                            "input": {
+                                "Connection": {
+                                    "id": "68eaa2b0-99fb-11ea-b703-cb13e29c3586",
+                                    "type": "flogo:connector",
+                                    "version": "2.2.0",
+                                    "name": "mysql-connector",
+                                    "hashTags": [],
+                                    "inputMappings": {},
+                                    "outputMappings": {},
+                                    "iteratorMappings": {},
+                                    "title": "MySQL Connector",
+                                    "description": "MySQL Connector",
+                                    "ref": "git.tibco.com/git/product/ipaas/wi-mysql.git/src/app/MySQL/connector/connection",
+                                    "settings": [
+                                        {
+                                            "name": "name",
+                                            "type": "string",
+                                            "required": true,
+                                            "display": {
+                                                "name": "Name",
+                                                "visible": true
+                                            },
+                                            "value": "tci_mysql_aws"
+                                        },
+                                        {
+                                            "name": "description",
+                                            "type": "string",
+                                            "display": {
+                                                "name": "Description",
+                                                "visible": true
+                                            },
+                                            "value": ""
+                                        },
+                                        {
+                                            "name": "host",
+                                            "type": "string",
+                                            "required": true,
+                                            "display": {
+                                                "name": "Host",
+                                                "description": "MySQL Database Host name",
+                                                "type": "string",
+                                                "visible": true,
+                                                "appPropertySupport": true
+                                            },
+                                            "value": "=$property[\"MySQL.tci_mysql_aws.Host\"]"
+                                        },
+                                        {
+                                            "name": "port",
+                                            "type": "integer",
+                                            "required": true,
+                                            "value": "=$property[\"MySQL.tci_mysql_aws.Port\"]",
+                                            "display": {
+                                                "name": "Port",
+                                                "description": "MySQL Database Port",
+                                                "type": "integer",
+                                                "visible": true,
+                                                "appPropertySupport": true
+                                            }
+                                        },
+                                        {
+                                            "name": "databaseName",
+                                            "type": "string",
+                                            "required": true,
+                                            "display": {
+                                                "name": "DatabaseName",
+                                                "description": "Name of the Database",
+                                                "type": "string",
+                                                "visible": true,
+                                                "appPropertySupport": true
+                                            },
+                                            "value": "=$property[\"MySQL.tci_mysql_aws.DatabaseName\"]"
+                                        },
+                                        {
+                                            "name": "user",
+                                            "type": "string",
+                                            "required": true,
+                                            "display": {
+                                                "name": "User",
+                                                "description": "Name of the Database User",
+                                                "visible": true,
+                                                "appPropertySupport": true
+                                            },
+                                            "value": "=$property[\"MySQL.tci_mysql_aws.User\"]"
+                                        },
+                                        {
+                                            "name": "password",
+                                            "type": "string",
+                                            "required": true,
+                                            "display": {
+                                                "name": "Password",
+                                                "description": "MySQL Database Port",
+                                                "type": "password",
+                                                "visible": true,
+                                                "appPropertySupport": true
+                                            },
+                                            "value": "=$property[\"MySQL.tci_mysql_aws.Password\"]"
+                                        },
+                                        {
+                                            "name": "onprem",
+                                            "type": "boolean",
+                                            "required": true,
+                                            "value": false,
+                                            "display": {
+                                                "name": "On Premise DBService",
+                                                "description": "Flag to indicate that the dbsevice is accessed via a tibtunnel",
+                                                "visible": true,
+                                                "readonly": false,
+                                                "valid": true
+                                            }
+                                        }
+                                    ],
+                                    "outputs": [],
+                                    "inputs": [],
+                                    "handler": {
+                                        "settings": []
+                                    },
+                                    "reply": [],
+                                    "s3Prefix": "Tibco",
+                                    "key": "Tibco/MySQL/connector/connection/connector.json",
+                                    "display": {
+                                        "name": "MySQL Connection",
+                                        "description": "MySQL Connector",
+                                        "category": "MySQL",
+                                        "visible": true,
+                                        "smallIcon": "icons/my_sql.png",
+                                        "largeIcon": "icons/my_sql.png"
+                                    },
+                                    "actions": [
+                                        {
+                                            "name": "Connect"
+                                        }
+                                    ],
+                                    "feature": {},
+                                    "loopType": "none",
+                                    "loopSettings": [],
+                                    "retrySettings": [],
+                                    "propertyMap": {},
+                                    "keyfield": "name",
+                                    "iteratorAccumulate": false,
+                                    "isValid": true,
+                                    "lastUpdatedTime": 1589911616830,
+                                    "user": "frs7kxs7vj4dnyjwzmpf2klsysvbntdg",
+                                    "connectorName": "tci_mysql_aws",
+                                    "connectorDescription": " "
+                                },
+                                "QueryName": "",
+                                "Query": "select FirstName, LastName, PostalCode, State, Country, LoyalCustomer from customer_details where Email=?;",
+                                "Fields": [
+                                    {
+                                        "FieldName": "PostalCode",
+                                        "Type": "CHAR",
+                                        "Selected": true,
+                                        "Parameter": false,
+                                        "isEditable": false
+                                    },
+                                    {
+                                        "FieldName": "State",
+                                        "Type": "VARCHAR",
+                                        "Selected": true,
+                                        "Parameter": false,
+                                        "isEditable": false
+                                    },
+                                    {
+                                        "FieldName": "Country",
+                                        "Type": "VARCHAR",
+                                        "Selected": true,
+                                        "Parameter": false,
+                                        "isEditable": false
+                                    },
+                                    {
+                                        "FieldName": "LoyalCustomer",
+                                        "Type": "VARCHAR",
+                                        "Selected": true,
+                                        "Parameter": false,
+                                        "isEditable": false
+                                    },
+                                    {
+                                        "FieldName": "",
+                                        "Type": "CHAR",
+                                        "Selected": false,
+                                        "Parameter": true,
+                                        "isEditable": false
+                                    },
+                                    {
+                                        "FieldName": "FirstName",
+                                        "Type": "VARCHAR",
+                                        "Selected": true,
+                                        "Parameter": false,
+                                        "isEditable": false
+                                    },
+                                    {
+                                        "FieldName": "LastName",
+                                        "Type": "VARCHAR",
+                                        "Selected": true,
+                                        "Parameter": false,
+                                        "isEditable": false
+                                    }
+                                ],
+                                "State": "ffa81ff5-8205-4c50-a8a5-0c6aafe3c833select FirstName, LastName, PostalCode, State, Country, LoyalCustomer from customer_details where Email=?;",
+                                "input": {
+                                    "mapping": {
+                                        "parameters": {
+                                            "": "=$flow.customer.loginid"
+                                        }
+                                    }
+                                }
+                            },
+                            "schemas": {
+                                "input": {
+                                    "input": {
+                                        "type": "json",
+                                        "value": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"definitions\":{},\"properties\":{\"parameters\":{\"type\":\"object\",\"properties\":{\"\":{\"type\":\"string\"}}}}}",
+                                        "fe_metadata": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"definitions\":{},\"properties\":{\"parameters\":{\"type\":\"object\",\"properties\":{\"\":{\"type\":\"string\"}}}}}"
+                                    }
+                                },
+                                "output": {
+                                    "Output": {
+                                        "type": "json",
+                                        "value": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"definitions\":{},\"properties\":{\"records\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"PostalCode\":{\"type\":\"string\"},\"State\":{\"type\":\"string\"},\"Country\":{\"type\":\"string\"},\"LoyalCustomer\":{\"type\":\"string\"},\"FirstName\":{\"type\":\"string\"},\"LastName\":{\"type\":\"string\"}}}}}}",
+                                        "fe_metadata": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"definitions\":{},\"properties\":{\"records\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"PostalCode\":{\"type\":\"string\"},\"State\":{\"type\":\"string\"},\"Country\":{\"type\":\"string\"},\"LoyalCustomer\":{\"type\":\"string\"},\"FirstName\":{\"type\":\"string\"},\"LastName\":{\"type\":\"string\"}}}}}}"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "id": "LogCRMOutput",
+                        "name": "LogCRMOutput",
+                        "description": "Simple Log Message Activity",
+                        "activity": {
+                            "ref": "#log",
+                            "input": {
+                                "Log Level": "INFO",
+                                "flowInfo": false,
+                                "message": "=string.concat(\"Customer First Name:\", $activity[FetchCustomerDetails].Output.records[0].FirstName)"
+                            }
+                        }
+                    },
+                    {
+                        "id": "InvokeOrderService",
+                        "name": "InvokeOrderService",
+                        "description": "Simple REST Activity",
+                        "settings": {
+                            "retryOnError": {
+                                "count": 0,
+                                "interval": 0
+                            }
+                        },
+                        "activity": {
+                            "ref": "#rest",
+                            "input": {
+                                "Method": "GET",
+                                "Uri": "https://my.api.mockaroo.com/orderschema.json/{id}?key=e6f32000",
+                                "Timeout": 0,
+                                "requestType": "application/json",
+                                "Use certificate for verification": false,
+                                "Server Certificate": "",
+                                "proxy": "",
+                                "host": "",
+                                "pathParams": {
+                                    "mapping": {
+                                        "id": "=$flow.order.id"
+                                    }
+                                }
+                            },
+                            "output": {
+                                "configureResponseCodes": false,
+                                "responseType": "application/json"
+                            },
+                            "schemas": {
+                                "input": {
+                                    "pathParams": {
+                                        "type": "json",
+                                        "value": "{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"}},\"required\":[]}",
+                                        "fe_metadata": "[{\"parameterName\":\"id\",\"type\":\"string\"}]"
+                                    },
+                                    "headers": {
+                                        "type": "json",
+                                        "value": "{\"type\":\"object\",\"properties\":{\"Accept\":{\"type\":\"string\",\"visible\":false},\"Accept-Charset\":{\"type\":\"string\",\"visible\":false},\"Accept-Encoding\":{\"type\":\"string\",\"visible\":false},\"Content-Type\":{\"type\":\"string\",\"visible\":false},\"Content-Length\":{\"type\":\"string\",\"visible\":false},\"Connection\":{\"type\":\"string\",\"visible\":false},\"Cookie\":{\"type\":\"string\",\"visible\":false},\"Pragma\":{\"type\":\"string\",\"visible\":false}},\"required\":[]}",
+                                        "fe_metadata": "[{\"parameterName\":\"Accept\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Accept-Charset\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Accept-Encoding\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Content-Type\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Content-Length\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Connection\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Cookie\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Pragma\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false}]"
+                                    }
+                                },
+                                "output": {
+                                    "responseBody": {
+                                        "type": "json",
+                                        "value": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"OrderNumber\":{\"type\":\"number\"},\"DateTime\":{\"type\":\"string\"}}}",
+                                        "fe_metadata": "{\"OrderNumber\":5713,\"DateTime\":\"2020-05-21 10:39:55\"}"
+                                    },
+                                    "headers": {
+                                        "type": "json",
+                                        "value": "{\"type\":\"object\",\"properties\":{\"Accept\":{\"type\":\"string\",\"visible\":false},\"Accept-Charset\":{\"type\":\"string\",\"visible\":false},\"Accept-Encoding\":{\"type\":\"string\",\"visible\":false},\"Content-Type\":{\"type\":\"string\",\"visible\":false},\"Content-Length\":{\"type\":\"string\",\"visible\":false},\"Connection\":{\"type\":\"string\",\"visible\":false},\"Cookie\":{\"type\":\"string\",\"visible\":false},\"Pragma\":{\"type\":\"string\",\"visible\":false}},\"required\":[]}",
+                                        "fe_metadata": "[{\"parameterName\":\"Accept\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Accept-Charset\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Accept-Encoding\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Content-Type\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Content-Length\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Connection\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Cookie\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Pragma\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false}]"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "id": "LogOrderOutput",
+                        "name": "LogOrderOutput",
+                        "description": "Simple Log Message Activity",
+                        "activity": {
+                            "ref": "#log",
+                            "input": {
+                                "Log Level": "INFO",
+                                "flowInfo": false,
+                                "message": "=string.tostring($activity[InvokeOrderService].responseBody)"
+                            }
+                        }
+                    },
+                    {
+                        "id": "InvokeMarketoService",
+                        "name": "InvokeMarketoService",
+                        "description": "Simple REST Activity",
+                        "settings": {
+                            "retryOnError": {
+                                "count": 0,
+                                "interval": 0
+                            }
+                        },
+                        "activity": {
+                            "ref": "#rest",
+                            "input": {
+                                "Method": "POST",
+                                "Uri": "https://my.api.mockaroo.com/marketoupsertschema.json?key=e6f32000&__method=POST",
+                                "Timeout": 0,
+                                "requestType": "application/json",
+                                "Use certificate for verification": false,
+                                "Server Certificate": "",
+                                "proxy": "",
+                                "host": "",
+                                "body": {
+                                    "mapping": {
+                                        "FirstName": "=$activity[FetchCustomerDetails].Output.records[0].FirstName",
+                                        "LastName": "=$activity[FetchCustomerDetails].Output.records[0].LastName",
+                                        "Email": "=$flow.customer.loginid",
+                                        "State": "=$activity[FetchCustomerDetails].Output.records[0].State",
+                                        "Country": "=$activity[FetchCustomerDetails].Output.records[0].Country",
+                                        "PostCode": "=$activity[FetchCustomerDetails].Output.records[0].PostalCode",
+                                        "LeadStatus": "fresh"
+                                    }
+                                }
+                            },
+                            "output": {
+                                "configureResponseCodes": false,
+                                "responseType": "application/json"
+                            },
+                            "schemas": {
+                                "input": {
+                                    "headers": {
+                                        "type": "json",
+                                        "value": "{\"type\":\"object\",\"properties\":{\"Accept\":{\"type\":\"string\",\"visible\":false},\"Accept-Charset\":{\"type\":\"string\",\"visible\":false},\"Accept-Encoding\":{\"type\":\"string\",\"visible\":false},\"Content-Type\":{\"type\":\"string\",\"visible\":false},\"Content-Length\":{\"type\":\"string\",\"visible\":false},\"Connection\":{\"type\":\"string\",\"visible\":false},\"Cookie\":{\"type\":\"string\",\"visible\":false},\"Pragma\":{\"type\":\"string\",\"visible\":false}},\"required\":[]}",
+                                        "fe_metadata": "[{\"parameterName\":\"Accept\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Accept-Charset\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Accept-Encoding\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Content-Type\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Content-Length\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Connection\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Cookie\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Pragma\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false}]"
+                                    },
+                                    "body": {
+                                        "type": "json",
+                                        "value": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"FirstName\":{\"type\":\"string\"},\"LastName\":{\"type\":\"string\"},\"Email\":{\"type\":\"string\"},\"State\":{\"type\":\"string\"},\"Country\":{\"type\":\"string\"},\"PostCode\":{\"type\":\"string\"},\"LeadStatus\":{\"type\":\"string\"}}}",
+                                        "fe_metadata": "{\n    \"FirstName\": \"Jagesh\",\n    \"LastName\": \"Tamboli\",\n    \"Email\": \"jtamboli@tibco.com\",\n    \"State\": \"ON\",\n    \"Country\": \"Canada\",\n    \"PostCode\": \"L5B4M8\",\n    \"LeadStatus\": \"Fresh\"\n\n}"
+                                    }
+                                },
+                                "output": {
+                                    "responseBody": {
+                                        "type": "json",
+                                        "value": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"number\"},\"Code\":{\"type\":\"number\"},\"Message\":{\"type\":\"string\"}}}",
+                                        "fe_metadata": "{\"id\":66,\"Code\":200,\"Message\":\"Successfully Created\"}"
+                                    },
+                                    "headers": {
+                                        "type": "json",
+                                        "value": "{\"type\":\"object\",\"properties\":{\"Accept\":{\"type\":\"string\",\"visible\":false},\"Accept-Charset\":{\"type\":\"string\",\"visible\":false},\"Accept-Encoding\":{\"type\":\"string\",\"visible\":false},\"Content-Type\":{\"type\":\"string\",\"visible\":false},\"Content-Length\":{\"type\":\"string\",\"visible\":false},\"Connection\":{\"type\":\"string\",\"visible\":false},\"Cookie\":{\"type\":\"string\",\"visible\":false},\"Pragma\":{\"type\":\"string\",\"visible\":false}},\"required\":[]}",
+                                        "fe_metadata": "[{\"parameterName\":\"Accept\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Accept-Charset\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Accept-Encoding\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Content-Type\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Content-Length\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Connection\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Cookie\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Pragma\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false}]"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "id": "LogMarketoOutput",
+                        "name": "LogMarketoOutput",
+                        "description": "Simple Log Message Activity",
+                        "activity": {
+                            "ref": "#log",
+                            "input": {
+                                "Log Level": "INFO",
+                                "flowInfo": false,
+                                "message": "=string.tostring($activity[InvokeMarketoService].responseBody)"
+                            }
+                        }
+                    },
+                    {
+                        "id": "CreateShipmentWaiverCase",
+                        "name": "CreateShipmentWaiverCase",
+                        "description": "Live Apps Create Case",
+                        "activity": {
+                            "ref": "#create",
+                            "input": {
+                                "applicationId": "3937",
+                                "artifactId": "18992",
+                                "sandboxId": "2363",
+                                "processName": "CreateWaiveShipping",
+                                "data": {
+                                    "mapping": {
+                                        "WaiveShippingAmount": {
+                                            "ShippingAmount": "=$flow.order[\"shipping amount\"]",
+                                            "IsLoyaltyCustomer": "=array.create($activity[FetchCustomerDetails].Output.records[0].LoyalCustomer)"
+                                        }
+                                    }
+                                }
+                            },
+                            "schemas": {
+                                "input": {
+                                    "data": {
+                                        "type": "json",
+                                        "value": "{\"type\":\"object\",\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"properties\":{\"WaiveShippingAmount\":{\"type\":\"object\",\"properties\":{\"ShippingAmount\":{\"type\":\"integer\",\"title\":\"Shipping Amount\",\"la_metadata\":{\"type\":\"metadata\",\"id\":\"3\",\"internalName\":\"ShippingAmount\",\"isSummary\":true}},\"IsLoyaltyCustomer\":{\"type\":\"array\",\"items\":{\"type\":\"string\",\"maxLength\":3,\"la_metadata\":{\"type\":\"metadata\",\"id\":\"4\",\"internalName\":\"IsLoyaltyCustomer\"},\"enum\":[\"Yes\",\"No\"]},\"title\":\"Is Loyalty Customer\"}},\"required\":[\"ShippingAmount\",\"IsLoyaltyCustomer\"]}},\"required\":[\"WaiveShippingAmount\"]}",
+                                        "fe_metadata": "{\"type\":\"object\",\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"properties\":{\"WaiveShippingAmount\":{\"type\":\"object\",\"properties\":{\"ShippingAmount\":{\"type\":\"integer\",\"title\":\"Shipping Amount\",\"la_metadata\":{\"type\":\"metadata\",\"id\":\"3\",\"internalName\":\"ShippingAmount\",\"isSummary\":true}},\"IsLoyaltyCustomer\":{\"type\":\"array\",\"items\":{\"type\":\"string\",\"maxLength\":3,\"la_metadata\":{\"type\":\"metadata\",\"id\":\"4\",\"internalName\":\"IsLoyaltyCustomer\"},\"enum\":[\"Yes\",\"No\"]},\"title\":\"Is Loyalty Customer\"}},\"required\":[\"ShippingAmount\",\"IsLoyaltyCustomer\"]}},\"required\":[\"WaiveShippingAmount\"]}"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "id": "LogLAOutput",
+                        "name": "LogLAOutput",
+                        "description": "Simple Log Message Activity",
+                        "activity": {
+                            "ref": "#log",
+                            "input": {
+                                "Log Level": "INFO",
+                                "flowInfo": false,
+                                "message": "=string.concat(\"Case Created: \", $activity[CreateShipmentWaiverCase].caseRef)"
+                            }
+                        }
+                    },
+                    {
+                        "id": "LiveAppsPerformCaseAction",
+                        "name": "LiveAppsPerformCaseAction",
+                        "description": "Live Apps Perform Case Action",
+                        "activity": {
+                            "ref": "#update",
+                            "input": {
+                                "applicationId": "3937",
+                                "artifactId": "19070",
+                                "sandboxId": "2363",
+                                "processName": "Waive",
+                                "caseRef": "=$activity[CreateShipmentWaiverCase].caseRef",
+                                "data": {
+                                    "mapping": {
+                                        "WaiveShippingAmount": {
+                                            "IsWaived": "Yes"
+                                        }
+                                    }
+                                }
+                            },
+                            "schemas": {
+                                "input": {
+                                    "data": {
+                                        "type": "json",
+                                        "value": "{\"type\":\"object\",\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"properties\":{\"WaiveShippingAmount\":{\"type\":\"object\",\"properties\":{\"IsWaived\":{\"type\":\"string\",\"maxLength\":3,\"title\":\"Is Waived\",\"la_metadata\":{\"type\":\"metadata\",\"id\":\"5\",\"internalName\":\"IsWaived\"},\"enum\":[\"Yes\",\"No\"]}},\"required\":[\"IsWaived\"]}},\"required\":[\"WaiveShippingAmount\"]}",
+                                        "fe_metadata": "{\"type\":\"object\",\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"properties\":{\"WaiveShippingAmount\":{\"type\":\"object\",\"properties\":{\"IsWaived\":{\"type\":\"string\",\"maxLength\":3,\"title\":\"Is Waived\",\"la_metadata\":{\"type\":\"metadata\",\"id\":\"5\",\"internalName\":\"IsWaived\"},\"enum\":[\"Yes\",\"No\"]}},\"required\":[\"IsWaived\"]}},\"required\":[\"WaiveShippingAmount\"]}"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "id": "Return",
+                        "name": "Return",
+                        "description": "Simple Return Activity",
+                        "activity": {
+                            "ref": "#actreturn",
+                            "settings": {
+                                "mappings": {
+                                    "OrderNumber": "=$activity[InvokeOrderService].responseBody.OrderNumber",
+                                    "DateTime": "=$activity[InvokeOrderService].responseBody.DateTime"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "metadata": {
+                    "input": [
+                        {
+                            "name": "customer",
+                            "type": "object",
+                            "schema": {
+                                "type": "json",
+                                "value": "{\"loginid\":{\"type\":\"string\"}}"
+                            }
+                        },
+                        {
+                            "name": "order",
+                            "type": "object",
+                            "schema": {
+                                "type": "json",
+                                "value": "{\"id\":{\"type\":\"string\"},\"shipping amount\":{\"type\":\"number\"},\"Total amount\":{\"type\":\"number\"}}"
+                            }
+                        }
+                    ],
+                    "output": [
+                        {
+                            "name": "OrderNumber",
+                            "type": "float64"
+                        },
+                        {
+                            "name": "DateTime",
+                            "type": "string"
+                        }
+                    ],
+                    "fe_metadata": {
+                        "input": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"customer\":{\"type\":\"object\",\"properties\":{\"loginid\":{\"type\":\"string\"}}},\"order\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"},\"shipping amount\":{\"type\":\"number\"},\"Total amount\":{\"type\":\"number\"}}}}}",
+                        "output": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"OrderNumber\":{\"type\":\"number\"},\"DateTime\":{\"type\":\"string\"}}}"
+                    }
+                },
+                "explicitReply": true
+            }
+        }
+    ],
+    "properties": [
+        {
+            "name": "MySQL.tci_mysql_aws.Host",
+            "type": "string",
+            "value": "mysqltci.ccvct4moy0lt.us-east-1.rds.amazonaws.com"
+        },
+        {
+            "name": "MySQL.tci_mysql_aws.Port",
+            "type": "float64",
+            "value": 3306
+        },
+        {
+            "name": "MySQL.tci_mysql_aws.DatabaseName",
+            "type": "string",
+            "value": "CustomerDB"
+        },
+        {
+            "name": "MySQL.tci_mysql_aws.User",
+            "type": "string",
+            "value": "admin123"
+        },
+        {
+            "name": "MySQL.tci_mysql_aws.Password",
+            "type": "string",
+            "value": "SECRET:0zN8bLOpvDHbMakABe4M6cYksccThyzv"
+        }
+    ],
+    "connections": {},
+    "contrib": "W3sicmVmIjoiZ2l0LnRpYmNvLmNvbS9naXQvcHJvZHVjdC9pcGFhcy93aS1jb250cmliLmdpdC9jb250cmlidXRpb25zL0dlbmVyYWwiLCJzM2xvY2F0aW9uIjoiVGliY28vR2VuZXJhbCJ9LHsicmVmIjoiZ2l0LnRpYmNvLmNvbS9naXQvcHJvZHVjdC9pcGFhcy93aS1teXNxbC5naXQvc3JjL2FwcC9NeVNRTCIsInMzbG9jYXRpb24iOiJUaWJjby9NeVNRTCJ9LHsicmVmIjoiZW1lYS1zd2ktc3ZuLmVtZWEudGliY28uY29tL3N2bi9BcmllbC90Y2ktbGl2ZWFwcHMvdHJ1bmsvTGl2ZUFwcHMiLCJzM2xvY2F0aW9uIjoiVGliY28vTGl2ZUFwcHMifV0=",
+    "fe_metadata": "UEsDBAoAAAAIAHuWtVCrqSRGFQAAABMAAAAIAAAAYXBwLmpzb26rViopykxPTy1yy8kvL1ayio6tBQBQSwECFAAKAAAACAB7lrVQq6kkRhUAAAATAAAACAAAAAAAAAAAAAAAAAAAAAAAYXBwLmpzb25QSwUGAAAAAAEAAQA2AAAAOwAAAAAA"
+}
