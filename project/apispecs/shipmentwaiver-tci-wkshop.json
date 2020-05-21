@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0",
-    "title": "ak_jt_tci_workshop",
+    "title": "shipmentwaiver-tci-wkshop",
     "x-lastModified": "2020-05-21T15:37:27.000Z"
   },
   "paths": {
@@ -36,7 +36,7 @@
             }
           }
         ],
-        "operationId": "postSalesorder",
+        "operationId": "ShipmentWaiverflow",
         "consumes": [
           "application/json"
         ]
