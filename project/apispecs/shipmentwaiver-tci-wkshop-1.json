@@ -1,0 +1,129 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "ak_jt_tci_workshop",
+    "x-lastModified": "2020-05-21T15:37:27.000Z"
+  },
+  "paths": {
+    "/shipmentwaiver": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/shipmentwaiverresponse"
+            },
+            "examples": {
+              "application/json": {
+                "OrderSummary": {
+                  "Message": "3188441"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "shipment waiver request",
+            "schema": {
+              "$ref": "#/definitions/shipmentwaiverrequest"
+            }
+          }
+        ],
+        "operationId": "postSalesorder",
+        "consumes": [
+          "application/json"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "salesorderrequest": {
+      "type": "object",
+      "properties": {
+        "uuid": {
+          "type": "string",
+          "default": "s1"
+        },
+        "ItemId": {
+          "type": "string",
+          "default": "001"
+        },
+        "Itemcount": {
+          "type": "integer",
+          "default": 3
+        },
+        "clienttimestamp": {
+          "type": "string",
+          "default": "2020-02-03 04:32:38.940"
+        }
+      }
+    },
+    "shipmentwaiverrequest": {
+      "type": "object",
+      "properties": {
+        "customer": {
+          "type": "object",
+          "properties": {
+            "loginid": {
+              "type": "string",
+              "format": "email",
+              "default": "jtamboli@tibco.com"
+            }
+          }
+        },
+        "order": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "default": "ghhg"
+            },
+            "shipping amount": {
+              "type": "integer",
+              "default": 10
+            },
+            "Total amount": {
+              "type": "integer",
+              "default": 20
+            }
+          }
+        }
+      }
+    },
+    "GiveNewSchemaNameHere": {
+      "type": "object",
+      "properties": {
+        "OrderSummary": {
+          "type": "object",
+          "properties": {
+            "Message": {
+              "type": "string",
+              "default": "3188441"
+            }
+          }
+        }
+      }
+    },
+    "shipmentwaiverresponse": {
+      "type": "object",
+      "properties": {
+        "OrderSummary": {
+          "type": "object",
+          "properties": {
+            "Message": {
+              "type": "string",
+              "default": "3188441"
+            }
+          }
+        }
+      }
+    }
+  }
+}
