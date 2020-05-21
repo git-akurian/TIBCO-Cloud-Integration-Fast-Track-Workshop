@@ -1,4 +1,4 @@
-# Getting Started with TIBCO Cloud
+# Getting Started with TIBCO Cloud <<Fix this page with subsriptions needed and remove Spotfire and Events Reference>>
 
 The workshop requires a TIBCO Cloud account. Within that Cloud account, you'll signup to use **TIBCO Cloud Integration**, **TIBCO Cloud Messaging**, and **TIBCO Live Apps**.
 
@@ -24,4 +24,4 @@ Add Spotfire and Events to your trial by clicking on the **Free trial** button.
 
 That's it!  You're ready for the workshop.
 
-Next step: [Go Back to the Introduction Page here ](README.md#workshop-overview)
+Next step: [Go Back to where you left off at the Introduction Page 'here' ](README.md#workshop-overview)
