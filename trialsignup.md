@@ -11,7 +11,7 @@ Enter your details and be sure to enter a valid email address to start your free
  In about 30 seconds your cloud environment will be ready.  You'll receive an email to verify, activate, and set the password on your account.
 
  Click activate  
-<img src="./images/3.png" alt="Activate Trial" width=500/>
+<img src="./images/2.png" alt="Activate Trial" width=500/>
 
  and close the prompt on your login and you are setup with **TIBCO Cloud Integration**
 
