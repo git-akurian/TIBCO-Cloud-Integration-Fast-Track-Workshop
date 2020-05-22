@@ -17,7 +17,7 @@ Enter your details and be sure to enter a valid email address to start your free
 
  and close the prompt on your login and you are setup with **TIBCO Cloud Integration**
 
- <img src="./images/3.png" alt="Activate Trial" width=500/>
+<img src="./images/3.png" alt="Activate Trial" width=500/>
 
 
 Add the remaining subscriptions needed for the workshop, Spotfire and Events.  To add the additional capabilities, click on **Subscriptions**.
@@ -30,7 +30,7 @@ Click on the **Add Subscription** links.  Either link will work just fine.
 
 Add Spotfire and Events to your trial by clicking on the **Free trial** button.
 
-<img src="./images/trial_spotfire.png" alt="Spotfire Free Trial" width=400/>&nbsp;&nbsp;<img src="./images/trial_events.png" alt="Events Free Trial" width=400/>
+<img src="./images/liveapp_freetrial.png" alt="Spotfire Free Trial" width=400/>
 
 That's it!  You're ready for the workshop.
 
