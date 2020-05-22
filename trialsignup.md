@@ -2,11 +2,9 @@
 
 The workshop requires a TIBCO Cloud account. Within that Cloud account, you'll signup to use **TIBCO Cloud Integration** and **TIBCO Live Apps**.
 
-<< JAGESH .. lets double check the subscriptions participants need >>
-
 The following instructions walk you through getting your environment all setup.  In a new tab, follow this URL, [https://cloud.tibco.com/cloud-services](https://cloud.tibco.com/cloud-services).  Select **FREE TRIAL** and select AWS from the dropdown.
 
-![Cloud Integration Signup](images/signup.png "Cloud Integration Signup")
+![Cloud Integration Signup](images/1.png "Cloud Integration Signup")
 
 Enter your details and be sure to enter a valid email address to start your free trial.
 
@@ -28,7 +26,7 @@ Click on the **Add Subscription** links.  Either link will work just fine.
 
 ![Add Subscription](images/add_subscription.png "Add Subscription")
 
-Add Spotfire and Events to your trial by clicking on the **Free trial** button.
+Add liveapps to your trial by clicking on the **Free trial** button.
 
 <img src="./images/liveapp_freetrial.png" alt="Spotfire Free Trial" width=400/>
 
