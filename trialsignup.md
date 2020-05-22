@@ -15,7 +15,7 @@ Enter your details and be sure to enter a valid email address to start your free
 
  and close the prompt on your login and you are setup with **TIBCO Cloud Integration**
 
-<img src="./images/3.png" alt="Activate Trial" width=500/>
+<img src="./images/3.png" alt="Close Prompt" width=500/>
 
 
 Add the remaining Live Apps Subscription needed for the workshop .  To add the additional capability, click on **Subscriptions**.
