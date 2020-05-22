@@ -26,7 +26,7 @@ Click on the **Add Subscription** links.  Either link will work just fine.
 
 ![Add Subscription](images/add_subscription.png "Add Subscription")
 
-Add liveapps to your trial by clicking on the **Free trial** button.
+Add Live Apps to your trial by clicking on the **Free trial** button.
 
 <img src="./images/liveapp_freetrial.png" alt="Spotfire Free Trial" width=400/>
 
