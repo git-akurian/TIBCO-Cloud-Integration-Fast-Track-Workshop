@@ -1,8 +1,8 @@
-# Getting Started with TIBCO Cloud <<Fix this page with subsriptions needed and remove Spotfire and Events Reference>>
+# Getting Started with TIBCO Cloud <<Fix this page with subscriptions needed and remove Spotfire and Events Reference>>
 
-The workshop requires a TIBCO Cloud account. Within that Cloud account, you'll signup to use **TIBCO Cloud Integration**, **TIBCO Cloud Messaging**, and **TIBCO Live Apps**.
+The workshop requires a TIBCO Cloud account. Within that Cloud account, you'll signup to use **TIBCO Cloud Integration** and **TIBCO Live Apps**.
 
-##<<JAGESH .. lets double check the subscriptions participants need>>
+<< JAGESH .. lets double check the subscriptions participants need >>
 
 The following instructions walk you through getting your environment all setup.  In a new tab, follow this URL, [https://cloud.tibco.com/cloud-services](https://cloud.tibco.com/cloud-services).  Select **FREE TRIAL** and select AWS from the dropdown.
 
