@@ -2,6 +2,8 @@
 
 The workshop requires a TIBCO Cloud account. Within that Cloud account, you'll signup to use **TIBCO Cloud Integration**, **TIBCO Cloud Messaging**, and **TIBCO Live Apps**.
 
+##<<JAGESH .. lets double check the subscriptions participants need>>
+
 The following instructions walk you through getting your environment all setup.  In a new tab, follow this URL, [https://cloud.tibco.com/cloud-services](https://cloud.tibco.com/cloud-services).  Select **FREE TRIAL** and select AWS from the dropdown.
 
 ![Cloud Integration Signup](images/signup.png "Cloud Integration Signup")
