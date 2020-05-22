@@ -1,4 +1,4 @@
-# Getting Started with TIBCO Cloud 
+# Getting Started with TIBCO Cloud
 
 The workshop requires a TIBCO Cloud account. Within that Cloud account, you'll signup to use **TIBCO Cloud Integration** and **TIBCO Live Apps**.
 
@@ -18,7 +18,7 @@ Enter your details and be sure to enter a valid email address to start your free
 <img src="./images/3.png" alt="Activate Trial" width=500/>
 
 
-Add the remaining subscriptions needed for the workshop, Spotfire and Events.  To add the additional capabilities, click on **Subscriptions**.
+Add the remaining Live Apps Subscription needed for the workshop .  To add the additional capability, click on **Subscriptions**.
 
 ![Subscription](images/homepage_subscription.png "Add subscriptions")
 
