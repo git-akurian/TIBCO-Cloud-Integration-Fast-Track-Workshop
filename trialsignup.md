@@ -9,11 +9,10 @@ The following instructions walk you through getting your environment all setup. 
 ![Cloud Integration Signup](images/signup.png "Cloud Integration Signup")
 
 Enter your details and be sure to enter a valid email address to start your free trial.
-![Start Free TRIAL](images/start_free_trial.png "start free trial")
 
  In about 30 seconds your cloud environment will be ready.  You'll receive an email to verify, activate, and set the password on your account.
 
-<img src="./images/activate_trial.png" alt="Activate Trial" width=500/>
+<img src="./images/2.png" alt="Activate Trial" width=500/>
 
 Add the remaining subscriptions needed for the workshop, Spotfire and Events.  To add the additional capabilities, click on **Subscriptions**.
 
