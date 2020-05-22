@@ -13,7 +13,7 @@ Enter your details and be sure to enter a valid email address to start your free
 
  In about 30 seconds your cloud environment will be ready.  You'll receive an email to verify, activate, and set the password on your account.
 
-<img src="./images/trial_form.png" alt="Trial Signup Form" width=500/>
+<img src="./images/activate_trial.png" alt="Activate Trial" width=500/>
 
 Add the remaining subscriptions needed for the workshop, Spotfire and Events.  To add the additional capabilities, click on **Subscriptions**.
 
