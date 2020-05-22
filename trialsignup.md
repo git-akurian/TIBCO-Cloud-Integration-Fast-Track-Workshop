@@ -1,4 +1,4 @@
-# Getting Started with TIBCO Cloud <<Fix this page with subscriptions needed and remove Spotfire and Events Reference>>
+# Getting Started with TIBCO Cloud 
 
 The workshop requires a TIBCO Cloud account. Within that Cloud account, you'll signup to use **TIBCO Cloud Integration** and **TIBCO Live Apps**.
 
