@@ -1,0 +1,14 @@
+{
+  "data": {
+    "customer": {
+      "loginid": "ballen@tibco.com"
+    },
+    "order": {
+      "id": "4",
+      "Total amount": 50,
+      "shipping amount": 15
+    },
+    "sessionName": "Launch Configuration 1"
+  },
+  "flowUri": "res://flow:shipmentwaiverflow"
+}
