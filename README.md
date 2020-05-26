@@ -7,6 +7,7 @@ Event Details: https://www.tibco.com/events/breakfast-club-data-tibco-cloud-inte
 **Also, download this repository to import artifacts like APISpecs and FlogoApp**
 ![Download](/images/gitzip.png)
 
+<img src="/images/poll.png" alt="poll" width=500 height=50/> 
 ![poll](/images/poll.png)
 
 ## Workshop Overview
