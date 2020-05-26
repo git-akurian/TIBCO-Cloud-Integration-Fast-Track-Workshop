@@ -7,7 +7,7 @@ Event Details: https://www.tibco.com/events/breakfast-club-data-tibco-cloud-inte
 **Also, download this repository to import artifacts like APISpecs and FlogoApp**
 ![Download](/images/gitzip.png)
 
-<img src="/images/poll.png" alt="poll" width=30 height=30 ALIGN=”right”/> 
+<img src="/images/poll.png" alt="poll" width=30 height=30 align=”right”/> 
 
 ## Workshop Overview
 During this COVID crisis, a lot of storefronts are closed. Retailers are increasingly trying to compensate through online sales.
