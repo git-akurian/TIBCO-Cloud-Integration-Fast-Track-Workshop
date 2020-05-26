@@ -683,7 +683,7 @@
         {
             "name": "MySQL.tci_mysql_aws.Host",
             "type": "string",
-            "value": "mysqltci.ccvct4moy0lt.us-east-1.rds.amazonaws.com"
+            "value": "mysqltciinstance.ccvct4moy0lt.us-east-1.rds.amazonaws.com"
         },
         {
             "name": "MySQL.tci_mysql_aws.Port",
