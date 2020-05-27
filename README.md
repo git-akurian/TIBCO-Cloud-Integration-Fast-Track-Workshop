@@ -7,6 +7,8 @@ Event Details: https://www.tibco.com/events/breakfast-club-data-tibco-cloud-inte
 **Also, download this repository to import artifacts like APISpecs and FlogoApp**
 ![Download](/images/gitzip.png)
 
+<img src="/images/poll.png" alt="poll" width=30 height=30 style="float:right"/> 
+
 ## Workshop Overview
 During this COVID crisis, a lot of storefronts are closed. Retailers are increasingly trying to compensate through online sales.
 So, how can a retailer change their established APIs and Business Process to provide an enhanced customer experience and that too in a very short span of time?   
