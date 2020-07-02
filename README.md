@@ -1,6 +1,9 @@
-# TIBCO-Cloud-Integration-Virtual-Workshop
-Join TIBCO Cloud™ Integration virtual workshop on May 27th at 9:30am EST to learn how to address new challenges in your business environment.  
-Event Details: https://www.tibco.com/events/breakfast-club-data-tibco-cloud-integration-virtual-workshop
+# TCI 2.0 Fast Track Workshop
+This is a TIBCO Cloud™ Integration workshop that can be consumed virtually or in-person using our quick follow-along format.
+
+The approximate time taken for this workshop is from 60 to 90 minutes.
+
+At the end of this workshop, users will be able to navigate TIBCO Cloud Integration in cloud.tibco.com , understand and implement usecases and interested to explore more features available in TIBCO Cloud.
 
 **The workshop requires a TIBCO Cloud account.**  You can get started with a [free trial](trialsignup.md) in 30 seconds.
 
