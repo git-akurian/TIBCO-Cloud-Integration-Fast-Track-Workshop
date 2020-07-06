@@ -1,7 +1,7 @@
 # TCI 2.0 Fast Track Workshop
 This is a TIBCO Cloud™ Integration workshop that can be consumed virtually or in-person using our quick follow-along format.
 
-The approximate time taken for this workshop is from 60 to 90 minutes.
+The approximate time taken for this workshop is from 60 to 90 minutes with support.
 
 At the end of this workshop, users will be able to navigate TIBCO Cloud Integration in cloud.tibco.com , understand and implement usecases and interested to explore more features available in TIBCO Cloud.
 
