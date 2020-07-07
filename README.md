@@ -9,7 +9,7 @@ At the end of this workshop, users will be able to navigate TIBCO Cloud Integrat
 
 **Also, download this repository to import artifacts like APISpecs and FlogoApp**
 ![Download](/images/gitzip1.png)
-![Download](/images/gitzip2.png)
+![Download](/images/gitzip2.png){:height="50%" width="50%"}
 
 <img src="/images/poll.png" alt="poll" width=30 height=30 style="float:right"/> 
 
