@@ -8,7 +8,8 @@ At the end of this workshop, users will be able to navigate TIBCO Cloud Integrat
 **The workshop requires a TIBCO Cloud account.**  You can get started with a [free trial](trialsignup.md) in 30 seconds.
 
 **Also, download this repository to import artifacts like APISpecs and FlogoApp**
-![Download](/images/gitzip.png)
+![Download](/images/gitzip1.png)
+![Download](/images/gitzip2.png)
 
 <img src="/images/poll.png" alt="poll" width=30 height=30 style="float:right"/> 
 
