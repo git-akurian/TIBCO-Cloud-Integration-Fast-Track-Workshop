@@ -3,10 +3,10 @@
 The Use-case also uses couple of API stubbed out to show the flow with SAP for Order Fulfillment
 and Marketo for lead-creation.
 
-## Mocking through Mockaroo
+## Mocking through TCI Or Mockaroo  
 The Workshop comes pre-wired with endpoint URLs already provisioned with mocakroo and can scale upto 1000 requests/per day.
 
-**[Note: Including TCI for creating Mock Apps , You can use any set-up for Mocking endpoints]**
+**[Note: Including TCI, You can use any set-up/tool for Mocking endpoints]**
 
 In case you want to provision your own set-up, you may visit "https://www.mockaroo.com/" and get a subscription.
 
