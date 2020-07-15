@@ -1,0 +1,23 @@
+{
+  "id": 238338,
+  "num_rows": 1000,
+  "file_format": "json",
+  "name": "OrderSchema",
+  "array": true,
+  "columns": [
+    {
+      "name": "OrderNumber",
+      "null_percentage": 0,
+      "type": "Formula",
+      "value": "random(3000,8000)",
+      "formula": ""
+    },
+    {
+      "name": "DateTime",
+      "null_percentage": 0,
+      "type": "Formula",
+      "value": "now()",
+      "formula": ""
+    }
+  ]
+}

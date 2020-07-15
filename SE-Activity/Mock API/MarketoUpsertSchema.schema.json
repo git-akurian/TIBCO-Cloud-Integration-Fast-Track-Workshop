@@ -1,0 +1,30 @@
+{
+  "id": 238347,
+  "num_rows": 1000,
+  "file_format": "json",
+  "name": "MarketoUpsertSchema",
+  "array": true,
+  "columns": [
+    {
+      "name": "id",
+      "null_percentage": 0,
+      "type": "Formula",
+      "value": "random(20,100)",
+      "formula": ""
+    },
+    {
+      "name": "Code",
+      "null_percentage": 0,
+      "type": "Formula",
+      "value": "200",
+      "formula": ""
+    },
+    {
+      "name": "Message",
+      "null_percentage": 0,
+      "type": "Formula",
+      "value": "concat(\"Created\",\" Lead Successfully\")",
+      "formula": ""
+    }
+  ]
+}
