@@ -1,4 +1,4 @@
-# Setting up a Mock API's for running the use-case and workshop
+# Setting up a Mock API's for running the use-case 
 
 The Use-case also uses couple of API stubbed out to show the flow with SAP for Order Fulfillment
 and Marketo for lead-creation.

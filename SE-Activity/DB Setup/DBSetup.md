@@ -1,4 +1,4 @@
-# Setting up a DB for running the use-case and workshop
+# Setting up a DB for running the use-case
 
 For the simplicity, the depicted mysql-DB is being hosted as an AWS-RDS instance.
 Being under free tier it would serve 50 connections independently.
