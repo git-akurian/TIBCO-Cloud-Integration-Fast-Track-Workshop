@@ -13,10 +13,12 @@ However, if you want to setup your own.
 
 Also note once you are done, do whitelist the IP's of TCI from the desired region.
 
-For e.g If you are using TCI from AWS-US make entries in your sg group as below -
+For e.g If you are connecting to TCI from AWS-US make entries in your sg group as below -
 
 <img src="/images/setup/1.png" alt="setup" width=700/>
 
-2. Once you have the `CustomerDB` created connect to it and run-the sql to create `Customer Details` table and populate a record. [you can use any third-party tool like sequel-pro] .
+2. Once you have the `CustomerDB` created connect to it and run-the below sql in order to create `Customer Details` table and populate a record.
 
-The sql file is located at `thingstodo/DB/CustomerDB_create_table.sql`.
+`[Note : you can use any third-party tool like sequel-pro].`
+
+The sql file is located at `SE-Activity/DB Setup/CustomerDB_create_table.sql`.
