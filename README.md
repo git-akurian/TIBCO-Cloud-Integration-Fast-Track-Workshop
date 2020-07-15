@@ -62,3 +62,9 @@ The entire process of providing that better customer experience can be achieved 
 
 ## Let's begin the process by collaborating with Business Teams on 'Special COVID Shipment Waiver' project
 ### Next step: [Collaboration starts from defining and testing the API Spec visually](0.apispec.md)
+
+## Note to the administrator of this workshop.
+
+Please visit this internal TIBCO location to setup the pre-requisites for the participants.
+
+![Internal Drive link] (https://drive.google.com/drive/folders/1y1sXRP5U7D8_FRQtzTwdLOiilriOxxA9?usp=sharing)
