@@ -1,6 +1,6 @@
 
 
-# Sending LiveApps invitation to participants.
+# Sending LiveApps invitations to participants.
 
 The use-case makes use of Liveapps process flow for the completion of "Shipment Waiver Flow".  
 
