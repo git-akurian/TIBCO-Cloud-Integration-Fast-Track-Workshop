@@ -14,27 +14,27 @@ At the end of this workshop, users will be able to navigate through, understand 
 <img src="/images/poll.png" alt="poll" width=30 height=30 style="float:right"/> 
 
 ## Workshop Overview
-During this COVID crisis, a lot of storefronts are closed. Retailers are increasingly trying to compensate through online sales.
-So, how can a retailer change their established APIs and Business Process to provide an enhanced customer experience and that too in a very short span of time?   
+During this COVID crisis, many storefronts are closed. Retailers are increasingly trying to compensate through online sales.
+So, how can a retailer change their established APIs and Business Process to quickly provide an enhanced customer experience?
 
 ### Can the retailer do 'something special' for a loyal customer?  
-As an example, they can 'automatically' **waive the shipping fees for their loyal customers.**.
+For example, the retailers can 'automatically' **waive the shipping fees for their loyal customers.**
 Customers will save time and money *(no need to contact customer service via phone or chat)*.  
-Retailer will also save on customer support esp. when their resources are spread pretty thin during this crisis time.  
+Retailers will also save on customer support especially when their resources are spread thin during this crisis time.  
 
-In other words, the business initiative is to enhance customer shopping experience by implementing a 'Special COVID Shipment Waiver' project.  
+In other words, the retailers can establish a business initiative to enhance customer shopping experience by implementing a 'Special COVID Shipment Waiver' project.  
 The Customer gets a response at the end of his shopping experience explaining how the company saved him time and money.  
-It is also important for the business to entice Customer to shop more with more tailored offers.
+This way the business can entice the customer to shop more with more tailored offers.
 
-### How can this business requirement of enhancing the customer experience be achieved?  
+### How can this initiative be achieved??  
 Retailer has to
-1) Identify the Customers who are loyal customers.  
+1) Identify the loyal customers.  
 *[CRM Lookup's, Reference Data ingestions,]*
-2) Verify Order information and fulfill the order as part of standard process.  
+2) Verify Order information and fulfill the order as part of the standard process.  
 *[SAP Inventory lookup's and fulfillment]*
-3) Create a temporary fork to the current shipping process and match different criteria's to waive the shipping.  
+3) Create a temporary fork to the current shipping process to waive the shipping.  
 *[Events and Business Process Decisions]*
-4) Make the loyal customer feel special with $$ savings along with more tailored offers   
+4) Reward the customers with savings and tailored offers   
 *[Notifications with the extra steps that company did to help customer during the COVID crisis]*   
 
 ### Translating the Business Requirement into a Technical Design
