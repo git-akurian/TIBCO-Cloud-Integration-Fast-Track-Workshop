@@ -2,10 +2,9 @@
 This is a TIBCO Cloud™ Integration workshop that can be consumed virtually or in-person using our quick follow-along format.
 
 The approximate time taken for this workshop is around 2 hours.
-
 *(about 90 minutes if you are working under the guidance of a TIBCO Solution Engineer)*
 
-At the end of this workshop, users will be able to navigate TIBCO Cloud Integration in cloud.tibco.com , understand and implement usecases and interested to explore more features available in TIBCO Cloud.
+At the end of this workshop, users will be able to navigate through, understand use cases for, and explore features available in TIBCO Cloud Integration.
 
 **The workshop requires a TIBCO Cloud account.**  You can get started with a [free trial](trialsignup.md) in 30 seconds.
 
