@@ -38,8 +38,8 @@ Retailer has to
 *[Notifications with the extra steps that company did to help customer during the COVID crisis]*   
 
 ### Translating the Business Requirement into a Technical Design
-The entire process of providing that better customer experience can be achieved using TIBCO Cloud Integration Capabilities in 4 steps.  
-1) Understanding and Defining the inputs from Customer and figuring out the Responses to Customer.  
+Providing a better customer experience can be achieved using TIBCO Cloud Integration Capabilities in 4 steps.  
+1) Define the inputs and outputs to and from the customer.
 *[API Specs, Creating mock apps from API Specs]*
 2) Building a new microservice using the API Spec to intelligently decide if customer qualifies for an **automated** exception.  
 *[API Led Integrations from a web browser using visual, drag-drop features]*
