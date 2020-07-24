@@ -41,17 +41,17 @@ Retailer has to
 Providing a better customer experience can be achieved using TIBCO Cloud Integration Capabilities in 4 steps.  
 1) Define the inputs and outputs to and from the customer.
 *[API Specs, Creating mock apps from API Specs]*
-2) Building a new microservice using the API Spec to intelligently decide if customer qualifies for an **automated** exception.  
+2) Build a new microservice using the API Spec to intelligently decide if a customer qualifies for an **automated** exception.  
 *[API Led Integrations from a web browser using visual, drag-drop features]*
 3) Call out to a variation of a business process that will automatically waive the shipping fees.  
 *[Low Code App developed by a BA]*.
-4) Expose the microservice that the customer is interacting with, on a mobile device or website.
+4) Expose the customer facing microservice on a mobile device or website.
 *[Deployed microservice is exposed into API Gateway and URL is secured for external consumption]*
 
 ### Why TIBCO Cloud Integration ?
 1) Integrated Developer and User experience.  
 *[Business Requirement to Technical Solution is collaborative between LOB,BA,IT]*
-2) Simple easy to use tool set.  
+2) Simple Tool Set.  
 *[All capabilities are visual, drag-drop and easy to understand]*
 3) Faster Time to Market.  
 *[Concept to Delivery using intuitive tools for multiple personas from build to test to prod in easy steps]*
