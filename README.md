@@ -6,7 +6,7 @@ The approximate time taken for this workshop is around 2 hours.
 
 At the end of this workshop, users will be able to navigate through, understand use cases for, and explore features available in TIBCO Cloud Integration.
 
-**The workshop requires a TIBCO Cloud account.**  You can get started with a [free trial](trialsignup.md) in 30 seconds.
+**The workshop requires a TIBCO Cloud account and few apabilities in it.**  You can get started with a [free trial](trialsignup.md) in 30 seconds.
 
 **Also, download this repository to import artifacts like APISpecs and FlogoApp**
 ![Download](/images/gitzip1.png)
