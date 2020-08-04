@@ -6,7 +6,7 @@ The approximate time taken for this workshop is around 2 hours.
 
 At the end of this workshop, users will be able to navigate through, understand use cases for, and explore features available in TIBCO Cloud Integration.
 
-**The workshop requires a TIBCO Cloud account and few apabilities in it.**  You can get started with a [free trial](trialsignup.md) in 30 seconds.
+**The workshop requires a TIBCO Cloud account.**  You can get started with a [free trial](trialsignup.md) in 30 seconds.
 
 **Also, download this repository to import artifacts like APISpecs and FlogoApp**
 ![Download](/images/gitzip1.png)
@@ -56,10 +56,10 @@ Providing a better customer experience can be achieved using TIBCO Cloud Integra
 3) Faster Time to Market.  
 *[Concept to Delivery using intuitive tools for multiple personas from build to test to prod in easy steps]*
 4) Strong Open Source Integration.  
-*[Single TCI platform that has multiple opensource inclusions like node.js,Swagger Specs,CICD tools etc....]*
+*[Single TCI platform that has multiple open source inclusions like node.js,Swagger Specs,CICD tools etc....]*
 
 ## The process flow for this workshop
-![FlowChart](/images/FlowChart.png)
+![FlowChart](/images/FlowChart.jpg)
 
 ## Let's begin the process by collaborating with Business Teams on 'Special COVID Shipment Waiver' project
 ### Next step: [Collaboration starts from defining and testing the API Spec visually](0.apispec.md)
@@ -70,6 +70,10 @@ Providing a better customer experience can be achieved using TIBCO Cloud Integra
 
 ## Note to the administrator of this workshop.
 
-Please visit this internal TIBCO location to setup the participants and the DB
+Please visit the internal TIBCO location provided below to
+1) setup the participants
+2) enable the LiveApps for sharing
+3) create a CRM Database referenced in section
+![Creating a connection to CRM DB] (https://github.com/git-akurian/TIBCO-Cloud-Integration-2.0-Workshop/blob/master/2.apiimplementation.md#creating-a-connection-to-crm-db)
 
 https://drive.google.com/drive/folders/1y1sXRP5U7D8_FRQtzTwdLOiilriOxxA9?usp=sharing
