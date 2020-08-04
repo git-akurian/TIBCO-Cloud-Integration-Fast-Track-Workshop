@@ -59,7 +59,7 @@ Providing a better customer experience can be achieved using TIBCO Cloud Integra
 *[Single TCI platform that has multiple open source inclusions like node.js,Swagger Specs,CICD tools etc....]*
 
 ## The process flow for this workshop
-![FlowChart](/images/FlowChart.jpg)
+![FlowChart](/images/FlowChart.png)
 
 ## Let's begin the process by collaborating with Business Teams on 'Special COVID Shipment Waiver' project
 ### Next step: [Collaboration starts from defining and testing the API Spec visually](0.apispec.md)
