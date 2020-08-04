@@ -71,10 +71,9 @@ Providing a better customer experience can be achieved using TIBCO Cloud Integra
 ## Note to the administrator of this workshop.
 
 Please visit the internal TIBCO location provided below to
-1) setup the participants
+1) verify the participants 
 2) enable the LiveApps for sharing
-3) create a CRM Database referenced in section
+3) create a CRM Database referenced in section - [Creating a connection to CRM DB](2.apiimplementation.md/#creating-a-connection-to-crm-db)
 
-[Creating a connection to CRM DB](2.apiimplementation/#creating-a-connection-to-crm-db)
-
+INTERNAL TIBCO LOCATION FOR WORKSHOP ADMINISTRATOR :
 https://drive.google.com/drive/folders/1y1sXRP5U7D8_FRQtzTwdLOiilriOxxA9?usp=sharing
