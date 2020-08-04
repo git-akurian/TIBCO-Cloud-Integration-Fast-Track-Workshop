@@ -74,6 +74,7 @@ Please visit the internal TIBCO location provided below to
 1) setup the participants
 2) enable the LiveApps for sharing
 3) create a CRM Database referenced in section
-[Creating a connection to CRM DB] (https://github.com/git-akurian/TIBCO-Cloud-Integration-2.0-Workshop/blob/master/2.apiimplementation.md#creating-a-connection-to-crm-db)
+
+[Creating a connection to CRM DB](2.apiimplementation/#creating-a-connection-to-crm-db)
 
 https://drive.google.com/drive/folders/1y1sXRP5U7D8_FRQtzTwdLOiilriOxxA9?usp=sharing
