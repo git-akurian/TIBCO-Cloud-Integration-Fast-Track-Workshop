@@ -69,14 +69,12 @@ TCI is a foundational component for implementing the [TIBCO(R) Responsive Applic
 ### Next step: [Collaboration starts from defining and testing the API Spec visually](0.apispec.md)
 
 
-***** *Below section is not for participants of this workshop* *****
-
-
-## Note to the TIBCO facilitator of this workshop
+## *Below section is not for participants of this workshop*
+### Note to the TIBCO facilitator of this workshop
 
 Please visit the internal TIBCO location provided below to
 1) verify the participants
-2) enable the LiveApps for sharing
+2) enable the LiveApps for sharing, referenced in section - [Importing a Low Code Business App](3.5.lowcodeappimportactivate.md)
 3) create a CRM Database referenced in section - [Creating a connection to CRM DB](2.apiimplementation.md/#creating-a-connection-to-crm-db)
 
 INTERNAL TIBCO LOCATION FOR WORKSHOP FACILITATOR:
