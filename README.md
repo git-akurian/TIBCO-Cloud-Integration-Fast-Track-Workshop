@@ -1,4 +1,4 @@
-# TCI 2.0 Fast Track Workshop
+# TIBCO Cloud Integration Fast Track Workshop
 This is a TIBCO Cloud™ Integration workshop that can be consumed virtually or in-person using our quick follow-along format.
 
 The approximate time taken for this workshop is around 2 hours.
@@ -49,7 +49,11 @@ Providing a better customer experience can be achieved using TIBCO Cloud Integra
 *[Deployed microservice is exposed into API Gateway and URL is secured for external consumption]*
 
 ### Why TIBCO Cloud Integration ?
-1) Integrated Developer and User experience.  
+TIBCO Cloud(TM) Integration (TCI) is an integration platform-as-a-service (iPaaS) that increases business agility by accelerating API-led and Event-driven integration processes. It empowers more people across the enterprise to connect any app, data source, or device across hybrid environments.
+
+TCI is a foundational component for implementing the [TIBCO(R) Responsive Application Mesh] (https://www.tibco.com/resources/demand-webinar/tibco-responsive-application-mesh) - - a vision for modern architecture, a blueprint for operationalizing this vision, and market-leading technology required to build it. Together they create a highly flexible digital platform that adapts quickly to rapidly changing business requirements.
+
+1) Tailored Integration Experiences.  
 *[Business Requirement to Technical Solution is collaborative between LOB,BA,IT]*
 2) Simple Tool Set.  
 *[All capabilities are visual, drag-drop and easy to understand]*
