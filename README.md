@@ -51,7 +51,7 @@ Providing a better customer experience can be achieved using TIBCO Cloud Integra
 ### Why TIBCO Cloud Integration ?
 TIBCO Cloud(TM) Integration (TCI) is an integration platform-as-a-service (iPaaS) that increases business agility by accelerating API-led and Event-driven integration processes. It empowers more people across the enterprise to connect any app, data source, or device across hybrid environments.
 
-TCI is a foundational component for implementing the [TIBCO(R) Responsive Application Mesh] (https://www.tibco.com/resources/demand-webinar/tibco-responsive-application-mesh) - - a vision for modern architecture, a blueprint for operationalizing this vision, and market-leading technology required to build it. Together they create a highly flexible digital platform that adapts quickly to rapidly changing business requirements.
+TCI is a foundational component for implementing the [TIBCO(R) Responsive Application Mesh](https://www.tibco.com/resources/demand-webinar/tibco-responsive-application-mesh) - a vision for modern architecture, a blueprint for operationalizing this vision, and market-leading technology required to build it. Together they create a highly flexible digital platform that adapts quickly to rapidly changing business requirements.
 
 1) Tailored Integration Experiences.  
 *[Business Requirement to Technical Solution is collaborative between LOB,BA,IT]*
