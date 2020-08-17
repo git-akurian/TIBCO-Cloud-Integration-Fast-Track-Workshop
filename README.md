@@ -73,9 +73,9 @@ TCI is a foundational component for implementing the [TIBCO(R) Responsive Applic
 
 ### Pre requisites from TIBCO Workshop facilitator
 Please visit the internal TIBCO location provided below to
-1) verify the participants
-2) enable the LiveApps for sharing, referenced in section - [Importing a Low Code Business App](3.5.lowcodeappimportactivate.md)
-3) create a CRM Database referenced in section - [Creating a connection to CRM DB](2.apiimplementation.md/#creating-a-connection-to-crm-db)
+1) Verify the participants
+2) Enable the LiveApps for sharing, referenced in section - [Importing a Low Code Business App](3.5.lowcodeappimportactivate.md)
+3) Create a CRM Database referenced in section - [Creating a connection to CRM DB](2.apiimplementation.md/#creating-a-connection-to-crm-db)
 
 INTERNAL TIBCO LOCATION FOR WORKSHOP FACILITATOR:
 https://drive.google.com/drive/folders/1y1sXRP5U7D8_FRQtzTwdLOiilriOxxA9?usp=sharing
