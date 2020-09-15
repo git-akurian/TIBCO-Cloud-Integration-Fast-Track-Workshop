@@ -10,7 +10,7 @@ The approximate time taken for this workshop is around 90 minutes.
 
 ## Why TIBCO Cloud Integration ?
 
-![Download](/images/TCI_IntroPage.png)
+![Download](/images/TCI_landing_page.png)
 
 TIBCO Cloud(TM) Integration (TCI) is an integration platform-as-a-service (iPaaS) that increases business agility by accelerating API-led and Event-driven integration processes. It allows for different personas within the organization to collaborate and contribute towards the success of business goal from within a visual, low-code platform.
 ![Download](/images/TCI_IntroPage.png)
