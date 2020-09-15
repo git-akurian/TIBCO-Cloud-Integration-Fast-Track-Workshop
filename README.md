@@ -9,7 +9,7 @@ The approximate time taken for this workshop is around 90 minutes.
 **[Register today to reserve your slot for a guided experience](https://www.tibco.com/tibco-cloud-integration-workshop).**
 
 ## Why TIBCO Cloud Integration ?
-TIBCO Cloud(TM) Integration (TCI) is an integration platform-as-a-service (iPaaS) that increases business agility by accelerating API-led and Event-driven integration processes. It empowers more people across the enterprise to connect any app, data source, or device across hybrid environments.
+TIBCO Cloud(TM) Integration (TCI) is an integration platform-as-a-service (iPaaS) that increases business agility by accelerating API-led and Event-driven integration processes. It allows for different personas within the organization to collaborate and contribute towards the success of business goal from within a visual, low-code platform.
 ![Download](/images/TCI_IntroPage.png)
 TCI is a foundational component for implementing the [TIBCO(R) Responsive Application Mesh](https://www.tibco.com/resources/demand-webinar/tibco-responsive-application-mesh) - a vision for modern architecture, a blueprint for operationalizing this vision, and market-leading technology required to build it. Together they create a highly flexible digital platform that adapts quickly to rapidly changing business requirements.
 
@@ -24,5 +24,5 @@ TCI is a foundational component for implementing the [TIBCO(R) Responsive Applic
 
 ## Begin the workshop after registration
 
-Let's begin the workshop by understanding the business requirement 
+Let's begin the workshop by understanding the business requirement
 ### Next step: [Understanding the usecase for this workshop](UseCaseDetails.md)

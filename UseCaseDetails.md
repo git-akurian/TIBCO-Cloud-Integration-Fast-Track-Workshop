@@ -1,13 +1,14 @@
 
 # Usecase for TIBCO Cloud Integration Fast Track Workshop
-This workshop is built on a usecase around waiving the shipping fees for a loyal customer.
+This workshop is built around a use case of waiving the shipping fees for a loyal customer.
 
 ## Pre-requisites
 
-**The workshop requires a TIBCO Cloud account.**  You can get started with a [free trial](trialsignup.md) in 30 seconds.
+**The workshop requires a TIBCO Cloud account.**  You can get started with a [free TIBCO Cloud trial account](trialsignup.md) in 30 seconds.
 
 **The workshop requires a TIBCO Workshop facilitator.**
- Your facilitator and the workshop date will be assigned to you after you complete your signup from [here](https://www.tibco.com/tibco-cloud-integration-workshop)
+  If you haven't completed the registration yet (as shown in previous page), please do so from [here](https://www.tibco.com/tibco-cloud-integration-workshop)
+  Your facilitator and the workshop date will be assigned to you after you complete your registration.
 
 **Prior to starting the workshop, download this repository to import artifacts like APISpecs**
 ![Download](/images/gitzip1.png)
