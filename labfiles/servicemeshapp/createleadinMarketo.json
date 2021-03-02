@@ -10,6 +10,7 @@
     "version": "1.0.0",
     "type": "flogo:app",
     "appModel": "1.1.1",
+    "tags": [],
     "triggers": [
         {
             "ref": "#rest_1",
@@ -136,13 +137,13 @@
                                 "host": "",
                                 "body": {
                                     "mapping": {
-                                        "FirstName": "=$flow.body.firstname",
-                                        "LastName": "=$flow.body.lastname",
                                         "Email": "=$flow.body.email",
                                         "State": "=$flow.body.State",
                                         "Country": "=$flow.body.Country",
                                         "PostCode": "=$flow.body.PostCode",
-                                        "LeadStatus": "=$flow.body.LeadStatus"
+                                        "LeadStatus": "=$flow.body.LeadStatus",
+                                        "FirstName": "=$flow.body.firstname",
+                                        "LastName": "=$flow.body.lastname"
                                     }
                                 }
                             },
@@ -243,5 +244,5 @@
     "properties": [],
     "connections": {},
     "contrib": "W3sicmVmIjoiZ2l0LnRpYmNvLmNvbS9naXQvcHJvZHVjdC9pcGFhcy93aS1jb250cmliLmdpdC9jb250cmlidXRpb25zL0dlbmVyYWwiLCJzM2xvY2F0aW9uIjoiVGliY28vR2VuZXJhbCJ9XQ==",
-    "fe_metadata": "UEsDBAoAAAAIAAx951CrqSRGFQAAABMAAAAIAAAAYXBwLmpzb26rViopykxPTy1yy8kvL1ayio6tBQBQSwECFAAKAAAACAAMfedQq6kkRhUAAAATAAAACAAAAAAAAAAAAAAAAAAAAAAAYXBwLmpzb25QSwUGAAAAAAEAAQA2AAAAOwAAAAAA"
+    "fe_metadata": "UEsDBAoAAAAIAFKBYlKrqSRGFQAAABMAAAAIAAAAYXBwLmpzb26rViopykxPTy1yy8kvL1ayio6tBQBQSwECFAAKAAAACABSgWJSq6kkRhUAAAATAAAACAAAAAAAAAAAAAAAAAAAAAAAYXBwLmpzb25QSwUGAAAAAAEAAQA2AAAAOwAAAAAA"
 }
