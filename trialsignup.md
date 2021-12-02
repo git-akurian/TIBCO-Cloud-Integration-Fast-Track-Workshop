@@ -1,6 +1,6 @@
 # Getting Started with TIBCO Cloud
 
-The workshop requires a TIBCO Cloud account. Within that Cloud account, you'll signup to use **TIBCO Cloud Integration**, **TIBCO Live Apps** and **TIBCO Mashery**
+The workshop requires a TIBCO Cloud account. Within that Cloud account, you'll signup to use **TIBCO Cloud Integration**, **TIBCO Live Apps** and **TIBCO API Management**
 
 The following instructions walk you through getting your environment all setup.  In a new tab, follow this URL, [https://cloud.tibco.com/cloud-services](https://cloud.tibco.com/cloud-services).  Select **FREE TRIAL** and select AWS from the dropdown.
 
@@ -13,22 +13,14 @@ Enter your details and be sure to enter a valid email address to start your free
  Click activate  
 <img src="./images/2.png" alt="Activate Trial" width=500/>
 
- and close the prompt on your login and you are setup with **TIBCO Cloud Integration** & **TIBCO Mashery**.
+ and close the prompt on your login and you are setup with **TIBCO Cloud Integration** & **TIBCO API Management**.
 
 <img src="./images/3.png" alt="Close Prompt" width=500/>
 
 
-Add the remaining Live Apps Subscription needed for the workshop .  To add the additional capability, click on **Subscriptions**.
+To confirm you have access to what is needed for the workshop, click on **Subscriptions**. You should see three cards signifying that you have access to API Management, Integration, and Live Apps.
 
-![Subscription](images/homepage_subscription.png "Add subscriptions")
-
-Click on the **Add Subscription** links.  Either link will work just fine.
-
-![Add Subscription](images/add_subscription.png "Add Subscription")
-
-Add Live Apps subscriptions to your trial by clicking on the **Free trial** button.
-
-<img src="./images/liveapp_freetrial.png" alt="Spotfire Free Trial" width=400/>
+![Subscription](images/homepage_subscriptions.png "Add subscriptions")
 
 That's it!  You're ready for the workshop.
 
