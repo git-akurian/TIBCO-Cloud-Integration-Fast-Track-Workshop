@@ -10,7 +10,7 @@ This workshop is built around a use case of waiving the shipping fees for a loya
   If you haven't completed the registration yet (as shown in previous page), please do so from [here](https://www.tibco.com/tibco-cloud-integration-workshop)
   Your facilitator and the workshop date will be assigned to you after you complete your registration.
 
-**Prior to starting the workshop, download this repository to import artifacts like APISpecs**
+**Prior to starting the workshop, download this repository as it has a number of files you will need as you work through it**
 ![Download](/images/gitzip1.png)
 
 <img src="/images/poll.png" alt="poll" width=30 height=30 style="float:right"/> 
@@ -28,33 +28,33 @@ In other words, the retailers can establish a business initiative to enhance cus
 The Customer gets a response at the end of his shopping experience explaining how the company saved him time and money.  
 This way the business can entice the customer to shop more with more tailored offers.
 
-### How can this initiative be achieved??  
-Retailer has to
-1) Identify the loyal customers.  
-*[CRM Lookup's, Reference Data ingestions,]*
-2) Verify Order information and fulfill the order as part of the standard process.  
-*[SAP Inventory lookup's and fulfillment]*
-3) Create a temporary fork to the current shipping process to waive the shipping.  
+### How can this initiative be achieved?  
+Retailer has to:
+1) Identify the loyal customers  
+*[CRM Lookups, Reference Data ingestions]*
+2) Verify Order information and fulfill the order as part of the standard process  
+*[SAP Inventory lookups and fulfillment]*
+3) Create a temporary fork to the current shipping process to waive the shipping  
 *[Events and Business Process Decisions]*
 4) Reward the customers with savings and tailored offers   
 *[Notifications with the extra steps that company did to help customer during the COVID crisis]*   
 
 ### Translating the Business Requirement into a Technical Design
-Providing a better customer experience can be achieved using TIBCO Cloud Integration Capabilities in 4 steps.  
-1) Define the inputs and outputs to and from the customer.
+Providing a better customer experience can be achieved using TIBCO Cloud Integration capabilities in 4 steps:  
+1) Define the inputs and outputs to and from the customer
 *[API Specs, Creating mock apps from API Specs]*
-2) Build a new microservice using the API Spec to intelligently decide if a customer qualifies for an **automated** exception.  
+2) Build a new microservice using the API Spec to intelligently decide if a customer qualifies for an **automated** exception  
 *[API Led Integrations from a web browser using visual, drag-drop features]*
-3) Call out to a variation of a business process that will automatically waive the shipping fees.  
-*[Low Code App developed by a BA]*.
-4) Expose the customer facing microservice on a mobile device or website.
+3) Call out to a variation of a business process that will automatically waive the shipping fees  
+*[Low Code App developed by a Business Analyst]*
+4) Expose the customer facing microservice on a mobile device or website
 *[Deployed microservice is exposed into API Gateway and URL is secured for external consumption]*
 
 
 ## The completed process flow for this workshop looks something like this
 ![FlowChart](/images/FlowChart.png)
 
-## Let's begin the process by collaborating with Business Teams on 'Special COVID Shipment Waiver' project
+## Let's begin the process by collaborating with Business Teams on the 'Special COVID Shipment Waiver' project
 ### Next step: [Collaboration starts from defining and testing the API Spec visually](0.apispec.md)
 
 

@@ -17,6 +17,7 @@
     "version": "1.0.0",
     "type": "flogo:app",
     "appModel": "1.1.1",
+    "tags": [],
     "triggers": [
         {
             "ref": "#rest_1",
@@ -29,6 +30,7 @@
                     "filename": "shipmentwaiver-tci-wkshop-1.json",
                     "content": "data:application/json;base64,ewogICJzd2FnZ2VyIjogIjIuMCIsCiAgImluZm8iOiB7CiAgICAidmVyc2lvbiI6ICIxLjAiLAogICAgInRpdGxlIjogImFrX2p0X3RjaV93b3Jrc2hvcCIsCiAgICAieC1sYXN0TW9kaWZpZWQiOiAiMjAyMC0wNS0yMVQxNTozNzoyNy4wMDBaIgogIH0sCiAgInBhdGhzIjogewogICAgIi9zaGlwbWVudHdhaXZlciI6IHsKICAgICAgInBvc3QiOiB7CiAgICAgICAgInByb2R1Y2VzIjogWwogICAgICAgICAgImFwcGxpY2F0aW9uL2pzb24iCiAgICAgICAgXSwKICAgICAgICAicmVzcG9uc2VzIjogewogICAgICAgICAgIjIwMCI6IHsKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIlN1Y2Nlc3MgcmVzcG9uc2UiLAogICAgICAgICAgICAic2NoZW1hIjogewogICAgICAgICAgICAgICIkcmVmIjogIiMvZGVmaW5pdGlvbnMvc2hpcG1lbnR3YWl2ZXJyZXNwb25zZSIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgImV4YW1wbGVzIjogewogICAgICAgICAgICAgICJhcHBsaWNhdGlvbi9qc29uIjogewogICAgICAgICAgICAgICAgIk9yZGVyU3VtbWFyeSI6IHsKICAgICAgICAgICAgICAgICAgIk1lc3NhZ2UiOiAiMzE4ODQ0MSIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgIH0KICAgICAgICB9LAogICAgICAgICJwYXJhbWV0ZXJzIjogWwogICAgICAgICAgewogICAgICAgICAgICAibmFtZSI6ICJib2R5IiwKICAgICAgICAgICAgImluIjogImJvZHkiLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAic2hpcG1lbnQgd2FpdmVyIHJlcXVlc3QiLAogICAgICAgICAgICAic2NoZW1hIjogewogICAgICAgICAgICAgICIkcmVmIjogIiMvZGVmaW5pdGlvbnMvc2hpcG1lbnR3YWl2ZXJyZXF1ZXN0IgogICAgICAgICAgICB9CiAgICAgICAgICB9CiAgICAgICAgXSwKICAgICAgICAib3BlcmF0aW9uSWQiOiAicG9zdFNhbGVzb3JkZXIiLAogICAgICAgICJjb25zdW1lcyI6IFsKICAgICAgICAgICJhcHBsaWNhdGlvbi9qc29uIgogICAgICAgIF0KICAgICAgfQogICAgfQogIH0sCiAgImRlZmluaXRpb25zIjogewogICAgInNhbGVzb3JkZXJyZXF1ZXN0IjogewogICAgICAidHlwZSI6ICJvYmplY3QiLAogICAgICAicHJvcGVydGllcyI6IHsKICAgICAgICAidXVpZCI6IHsKICAgICAgICAgICJ0eXBlIjogInN0cmluZyIsCiAgICAgICAgICAiZGVmYXVsdCI6ICJzMSIKICAgICAgICB9LAogICAgICAgICJJdGVtSWQiOiB7CiAgICAgICAgICAidHlwZSI6ICJzdHJpbmciLAogICAgICAgICAgImRlZmF1bHQiOiAiMDAxIgogICAgICAgIH0sCiAgICAgICAgIkl0ZW1jb3VudCI6IHsKICAgICAgICAgICJ0eXBlIjogImludGVnZXIiLAogICAgICAgICAgImRlZmF1bHQiOiAzCiAgICAgICAgfSwKICAgICAgICAiY2xpZW50dGltZXN0YW1wIjogewogICAgICAgICAgInR5cGUiOiAic3RyaW5nIiwKICAgICAgICAgICJkZWZhdWx0IjogIjIwMjAtMDItMDMgMDQ6MzI6MzguOTQwIgogICAgICAgIH0KICAgICAgfQogICAgfSwKICAgICJzaGlwbWVudHdhaXZlcnJlcXVlc3QiOiB7CiAgICAgICJ0eXBlIjogIm9iamVjdCIsCiAgICAgICJwcm9wZXJ0aWVzIjogewogICAgICAgICJjdXN0b21lciI6IHsKICAgICAgICAgICJ0eXBlIjogIm9iamVjdCIsCiAgICAgICAgICAicHJvcGVydGllcyI6IHsKICAgICAgICAgICAgImxvZ2luaWQiOiB7CiAgICAgICAgICAgICAgInR5cGUiOiAic3RyaW5nIiwKICAgICAgICAgICAgICAiZm9ybWF0IjogImVtYWlsIiwKICAgICAgICAgICAgICAiZGVmYXVsdCI6ICJqdGFtYm9saUB0aWJjby5jb20iCiAgICAgICAgICAgIH0KICAgICAgICAgIH0KICAgICAgICB9LAogICAgICAgICJvcmRlciI6IHsKICAgICAgICAgICJ0eXBlIjogIm9iamVjdCIsCiAgICAgICAgICAicHJvcGVydGllcyI6IHsKICAgICAgICAgICAgImlkIjogewogICAgICAgICAgICAgICJ0eXBlIjogInN0cmluZyIsCiAgICAgICAgICAgICAgImRlZmF1bHQiOiAiZ2hoZyIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgInNoaXBwaW5nIGFtb3VudCI6IHsKICAgICAgICAgICAgICAidHlwZSI6ICJpbnRlZ2VyIiwKICAgICAgICAgICAgICAiZGVmYXVsdCI6IDEwCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgICJUb3RhbCBhbW91bnQiOiB7CiAgICAgICAgICAgICAgInR5cGUiOiAiaW50ZWdlciIsCiAgICAgICAgICAgICAgImRlZmF1bHQiOiAyMAogICAgICAgICAgICB9CiAgICAgICAgICB9CiAgICAgICAgfQogICAgICB9CiAgICB9LAogICAgIkdpdmVOZXdTY2hlbWFOYW1lSGVyZSI6IHsKICAgICAgInR5cGUiOiAib2JqZWN0IiwKICAgICAgInByb3BlcnRpZXMiOiB7CiAgICAgICAgIk9yZGVyU3VtbWFyeSI6IHsKICAgICAgICAgICJ0eXBlIjogIm9iamVjdCIsCiAgICAgICAgICAicHJvcGVydGllcyI6IHsKICAgICAgICAgICAgIk1lc3NhZ2UiOiB7CiAgICAgICAgICAgICAgInR5cGUiOiAic3RyaW5nIiwKICAgICAgICAgICAgICAiZGVmYXVsdCI6ICIzMTg4NDQxIgogICAgICAgICAgICB9CiAgICAgICAgICB9CiAgICAgICAgfQogICAgICB9CiAgICB9LAogICAgInNoaXBtZW50d2FpdmVycmVzcG9uc2UiOiB7CiAgICAgICJ0eXBlIjogIm9iamVjdCIsCiAgICAgICJwcm9wZXJ0aWVzIjogewogICAgICAgICJPcmRlclN1bW1hcnkiOiB7CiAgICAgICAgICAidHlwZSI6ICJvYmplY3QiLAogICAgICAgICAgInByb3BlcnRpZXMiOiB7CiAgICAgICAgICAgICJNZXNzYWdlIjogewogICAgICAgICAgICAgICJ0eXBlIjogInN0cmluZyIsCiAgICAgICAgICAgICAgImRlZmF1bHQiOiAiMzE4ODQ0MSIKICAgICAgICAgICAgfQogICAgICAgICAgfQogICAgICAgIH0KICAgICAgfQogICAgfQogIH0KfQ=="
                 },
+                "swaggerVersion": "v2",
                 "secureConnection": false,
                 "serverKey": "",
                 "caCertificate": ""
@@ -40,6 +42,7 @@
                     "settings": {
                         "APISpecPath": "/shipmentwaiver",
                         "Method": "POST",
+                        "reqType": "application/json",
                         "Path": "/shipmentwaiver",
                         "OutputValidation": false
                     },
@@ -89,15 +92,15 @@
                             }
                         },
                         "output": {
-                            "headers": {
-                                "type": "json",
-                                "value": "{\"type\":\"object\",\"properties\":{\"Accept\":{\"type\":\"string\",\"visible\":false},\"Accept-Charset\":{\"type\":\"string\",\"visible\":false},\"Accept-Encoding\":{\"type\":\"string\",\"visible\":false},\"Content-Type\":{\"type\":\"string\",\"visible\":false},\"Content-Length\":{\"type\":\"string\",\"visible\":false},\"Connection\":{\"type\":\"string\",\"visible\":false},\"Cookie\":{\"type\":\"string\",\"visible\":false},\"Pragma\":{\"type\":\"string\",\"visible\":false}},\"required\":[]}",
-                                "fe_metadata": "[{\"parameterName\":\"Accept\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Accept-Charset\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Accept-Encoding\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Content-Type\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Content-Length\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Connection\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Cookie\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false},{\"parameterName\":\"Pragma\",\"type\":\"string\",\"repeating\":\"false\",\"required\":\"false\",\"visible\":false}]"
-                            },
                             "body": {
                                 "type": "json",
                                 "value": "{\"type\":\"object\",\"properties\":{\"customer\":{\"type\":\"object\",\"properties\":{\"loginid\":{\"type\":\"string\",\"format\":\"email\",\"default\":\"jtamboli@tibco.com\"}}},\"order\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\",\"default\":\"ghhg\"},\"shipping amount\":{\"type\":\"integer\",\"default\":10},\"Total amount\":{\"type\":\"integer\",\"default\":20}}}}}",
                                 "fe_metadata": "{\"type\":\"object\",\"properties\":{\"customer\":{\"type\":\"object\",\"properties\":{\"loginid\":{\"type\":\"string\",\"format\":\"email\",\"default\":\"jtamboli@tibco.com\"}}},\"order\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\",\"default\":\"ghhg\"},\"shipping amount\":{\"type\":\"integer\",\"default\":10},\"Total amount\":{\"type\":\"integer\",\"default\":20}}}}}"
+                            },
+                            "multipartForm": {
+                                "type": "json",
+                                "value": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"array\",\"items\":{}}",
+                                "fe_metadata": "[]"
                             }
                         }
                     },
@@ -173,14 +176,41 @@
                         "id": "FetchCustomerDetails",
                         "name": "FetchCustomerDetails",
                         "description": "This activity executes SQL queries on a database",
+                        "settings": {
+                            "retryOnError": {
+                                "count": 0,
+                                "interval": 0
+                            }
+                        },
                         "activity": {
                             "ref": "#query",
                             "input": {
-                                "Connection": "conn://57cf1770-c05e-11ea-af65-b3f8d72afe7f",
+                                "Connection": "conn://917315c0-52cb-11ec-9839-83c2ee3ff9fb",
                                 "QueryName": "",
-                                "Query": "select FirstName, LastName, PostalCode, State, Country, LoyalCustomer from customer_details where Email=?;",
+                                "Query": "select FirstName, LastName, PostalCode, State, Country, LoyalCustomer from customer_details where Email=?email;",
                                 "manualmode": false,
                                 "Fields": [
+                                    {
+                                        "FieldName": "email",
+                                        "Type": "VARCHAR",
+                                        "Selected": false,
+                                        "Parameter": true,
+                                        "isEditable": false
+                                    },
+                                    {
+                                        "FieldName": "FirstName",
+                                        "Type": "VARCHAR",
+                                        "Selected": true,
+                                        "Parameter": false,
+                                        "isEditable": false
+                                    },
+                                    {
+                                        "FieldName": "LastName",
+                                        "Type": "VARCHAR",
+                                        "Selected": true,
+                                        "Parameter": false,
+                                        "isEditable": false
+                                    },
                                     {
                                         "FieldName": "PostalCode",
                                         "Type": "CHAR",
@@ -208,34 +238,13 @@
                                         "Selected": true,
                                         "Parameter": false,
                                         "isEditable": false
-                                    },
-                                    {
-                                        "FieldName": "",
-                                        "Type": "CHAR",
-                                        "Selected": false,
-                                        "Parameter": true,
-                                        "isEditable": false
-                                    },
-                                    {
-                                        "FieldName": "FirstName",
-                                        "Type": "VARCHAR",
-                                        "Selected": true,
-                                        "Parameter": false,
-                                        "isEditable": false
-                                    },
-                                    {
-                                        "FieldName": "LastName",
-                                        "Type": "VARCHAR",
-                                        "Selected": true,
-                                        "Parameter": false,
-                                        "isEditable": false
                                     }
                                 ],
-                                "State": "73e3a50b-5cc3-473e-a558-7a483dee1ba2select FirstName, LastName, PostalCode, State, Country, LoyalCustomer from customer_details where Email=?;",
+                                "State": "5cfafee0-41fa-4669-a9e8-82f699aeeffaselect FirstName, LastName, PostalCode, State, Country, LoyalCustomer from customer_details where Email=?email;",
                                 "input": {
                                     "mapping": {
                                         "parameters": {
-                                            "": "=$flow.customer.loginid"
+                                            "email": "=$flow.customer.loginid"
                                         }
                                     }
                                 }
@@ -244,15 +253,15 @@
                                 "input": {
                                     "input": {
                                         "type": "json",
-                                        "value": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"definitions\":{},\"properties\":{\"parameters\":{\"type\":\"object\",\"properties\":{\"\":{\"type\":\"string\"}}}}}",
-                                        "fe_metadata": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"definitions\":{},\"properties\":{\"parameters\":{\"type\":\"object\",\"properties\":{\"\":{\"type\":\"string\"}}}}}"
+                                        "value": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"definitions\":{},\"properties\":{\"parameters\":{\"type\":\"object\",\"properties\":{\"email\":{\"type\":\"string\"}}}}}",
+                                        "fe_metadata": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"definitions\":{},\"properties\":{\"parameters\":{\"type\":\"object\",\"properties\":{\"email\":{\"type\":\"string\"}}}}}"
                                     }
                                 },
                                 "output": {
                                     "Output": {
                                         "type": "json",
-                                        "value": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"definitions\":{},\"properties\":{\"records\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"PostalCode\":{\"type\":\"string\"},\"State\":{\"type\":\"string\"},\"Country\":{\"type\":\"string\"},\"LoyalCustomer\":{\"type\":\"string\"},\"FirstName\":{\"type\":\"string\"},\"LastName\":{\"type\":\"string\"}}}}}}",
-                                        "fe_metadata": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"definitions\":{},\"properties\":{\"records\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"PostalCode\":{\"type\":\"string\"},\"State\":{\"type\":\"string\"},\"Country\":{\"type\":\"string\"},\"LoyalCustomer\":{\"type\":\"string\"},\"FirstName\":{\"type\":\"string\"},\"LastName\":{\"type\":\"string\"}}}}}}"
+                                        "value": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"definitions\":{},\"properties\":{\"records\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"FirstName\":{\"type\":\"string\"},\"LastName\":{\"type\":\"string\"},\"PostalCode\":{\"type\":\"string\"},\"State\":{\"type\":\"string\"},\"Country\":{\"type\":\"string\"},\"LoyalCustomer\":{\"type\":\"string\"}}}}}}",
+                                        "fe_metadata": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"definitions\":{},\"properties\":{\"records\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"FirstName\":{\"type\":\"string\"},\"LastName\":{\"type\":\"string\"},\"PostalCode\":{\"type\":\"string\"},\"State\":{\"type\":\"string\"},\"Country\":{\"type\":\"string\"},\"LoyalCustomer\":{\"type\":\"string\"}}}}}}"
                                     }
                                 }
                             }
@@ -285,12 +294,18 @@
                             "ref": "#rest",
                             "input": {
                                 "enableASR": false,
+                                "swagger": "",
+                                "authorization": false,
+                                "authorizationConn": "",
+                                "serviceName": "",
+                                "resourcePath": "",
                                 "Method": "GET",
                                 "Uri": "https://my.api.mockaroo.com/orderschema.json/{id}?key=e6f32000",
-                                "Timeout": 0,
                                 "requestType": "application/json",
                                 "Use certificate for verification": false,
+                                "mutualAuth": false,
                                 "Server Certificate": "",
+                                "Timeout": 0,
                                 "proxy": "",
                                 "host": "",
                                 "pathParams": {
@@ -301,7 +316,8 @@
                             },
                             "output": {
                                 "configureResponseCodes": false,
-                                "responseType": "application/json"
+                                "responseType": "application/json",
+                                "responseOutput": "JSON Object"
                             },
                             "schemas": {
                                 "input": {
@@ -358,14 +374,121 @@
                             "ref": "#rest",
                             "input": {
                                 "enableASR": true,
-                                "serviceName": "tcius-dGlibG90d3hqYnFmZWJhYnBxa3Q3Z21xZnQ3dnUyaHg",
+                                "asrDialog": {
+                                    "gsbc": "01ECJMHE6YYF6Q37M57083BHKR",
+                                    "operation": "post",
+                                    "path": "/marketoLead",
+                                    "service": {
+                                        "serviceId": "tcius-YnNhcG42Ympub2tzanpwdWZzNGN6bHl6dTdyaGRsNHk",
+                                        "title": "CreateMarketoLeadFlow",
+                                        "description": "Simple REST Trigger",
+                                        "swaggerChecksum": "8d8d0c97e251dea41985d5a4bf5c5789be340d0d84835c6ac5f9561fedaa902c",
+                                        "extAuthz": [
+                                            "tenant-basic"
+                                        ],
+                                        "assurance": "published",
+                                        "baseURL": "https://integration.cloud.tibcoapps.com",
+                                        "path": "/gsbc/01ECJMHE6YYF6Q37M57083BHKR/tci/bsapn6bjnoksjzpufs4czlyzu7rhdl4y",
+                                        "apiSpec": {
+                                            "definitions": {
+                                                "schema1": {
+                                                    "properties": {
+                                                        "Country": {
+                                                            "type": "string"
+                                                        },
+                                                        "LeadStatus": {
+                                                            "type": "string"
+                                                        },
+                                                        "PostCode": {
+                                                            "type": "string"
+                                                        },
+                                                        "State": {
+                                                            "type": "string"
+                                                        },
+                                                        "email": {
+                                                            "type": "string"
+                                                        },
+                                                        "firstname": {
+                                                            "type": "string"
+                                                        },
+                                                        "lastname": {
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                },
+                                                "schema2": {
+                                                    "properties": {
+                                                        "Message": {
+                                                            "type": "string"
+                                                        },
+                                                        "id": {
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                }
+                                            },
+                                            "info": {
+                                                "description": "Simple REST Trigger",
+                                                "title": "CreateMarketoLeadFlow",
+                                                "version": "1.0.0"
+                                            },
+                                            "paths": {
+                                                "/marketoLead": {
+                                                    "post": {
+                                                        "consumes": [
+                                                            "application/json"
+                                                        ],
+                                                        "operationId": "post_marketoLead",
+                                                        "parameters": [
+                                                            {
+                                                                "description": "request body parameter",
+                                                                "in": "body",
+                                                                "name": "body",
+                                                                "required": true,
+                                                                "schema": {
+                                                                    "$ref": "#/definitions/schema1"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "responses": {
+                                                            "200": {
+                                                                "description": "Rest Response",
+                                                                "schema": {
+                                                                    "$ref": "#/definitions/schema2"
+                                                                }
+                                                            }
+                                                        },
+                                                        "summary": "CreateMarketoLead"
+                                                    }
+                                                }
+                                            },
+                                            "swagger": "2.0",
+                                            "host": "integration.cloud.tibcoapps.com",
+                                            "schemes": [
+                                                "https"
+                                            ],
+                                            "basePath": "/gsbc/01ECJMHE6YYF6Q37M57083BHKR/tci/bsapn6bjnoksjzpufs4czlyzu7rhdl4y"
+                                        },
+                                        "intercom": true,
+                                        "intercomRegion": "us-west-2"
+                                    }
+                                },
+                                "swagger": "",
+                                "authorization": false,
+                                "authorizationConn": "",
+                                "serviceName": "",
                                 "resourcePath": "/marketoLead",
                                 "Method": "POST",
-                                "Uri": "/gsbc/01ECJPQ1D0Q8K4F88T3JVXQCZ4/tci/tiblotwxjbqfebabpqkt7gmqft7vu2hx",
-                                "Timeout": 0,
+                                "Uri": "/gsbc/01ECJMHE6YYF6Q37M57083BHKR/tci/bsapn6bjnoksjzpufs4czlyzu7rhdl4y",
                                 "requestType": "application/json",
                                 "Use certificate for verification": false,
+                                "mutualAuth": false,
+                                "Client Certificate": "",
+                                "Client Key": "",
                                 "Server Certificate": "",
+                                "Timeout": 0,
                                 "proxy": "",
                                 "host": "",
                                 "body": {
@@ -379,14 +502,15 @@
                             },
                             "output": {
                                 "configureResponseCodes": true,
-                                "responseType": "application/json"
+                                "responseType": "application/json",
+                                "responseOutput": "JSON Object"
                             },
                             "schemas": {
                                 "input": {
                                     "serviceMetadata": {
                                         "type": "json",
-                                        "value": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"serviceId\":{\"type\":\"string\"},\"title\":{\"type\":\"string\"},\"description\":{\"type\":\"string\"},\"lastModifiedTime\":{\"type\":\"number\"},\"swaggerChecksum\":{\"type\":\"string\"},\"assurance\":{\"type\":\"string\"},\"intercom\":{\"type\":\"boolean\"},\"intercomRegion\":{\"type\":\"string\"},\"path\":{\"type\":\"string\"},\"baseURL\":{\"type\":\"string\"},\"apiSpec\":{\"type\":\"object\",\"properties\":{\"info\":{\"type\":\"object\",\"properties\":{\"description\":{\"type\":\"string\"},\"title\":{\"type\":\"string\"},\"version\":{\"type\":\"string\"}}},\"paths\":{\"type\":\"object\",\"properties\":{\"/marketoLead\":{\"type\":\"object\",\"properties\":{\"post\":{\"type\":\"object\",\"properties\":{\"operationId\":{\"type\":\"string\"},\"parameters\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"description\":{\"type\":\"string\"},\"in\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"},\"required\":{\"type\":\"boolean\"},\"schema\":{\"type\":\"object\",\"properties\":{\"properties\":{\"type\":\"object\",\"properties\":{\"Country\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"LeadStatus\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"PostCode\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"State\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"email\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"firstname\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"lastname\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}}}},\"type\":{\"type\":\"string\"}}}}}},\"responses\":{\"type\":\"object\",\"properties\":{\"200\":{\"type\":\"object\",\"properties\":{\"description\":{\"type\":\"string\"},\"schema\":{\"type\":\"object\",\"properties\":{\"properties\":{\"type\":\"object\",\"properties\":{\"Message\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"id\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}}}},\"type\":{\"type\":\"string\"}}}}}}},\"summary\":{\"type\":\"string\"}}}}}}},\"swagger\":{\"type\":\"string\"},\"host\":{\"type\":\"string\"},\"schemes\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"basePath\":{\"type\":\"string\"}}}}}",
-                                        "fe_metadata": "{\"serviceId\":\"tcius-dGlibG90d3hqYnFmZWJhYnBxa3Q3Z21xZnQ3dnUyaHg\",\"title\":\"CreateMarketoLeadFlow\",\"description\":\" \",\"lastModifiedTime\":1594138945953,\"swaggerChecksum\":\"c71fcc3ae637a0f9bce113c764240e571dcc8b213127bb1cebb290ff9aaa3ca3\",\"assurance\":\"draft\",\"intercom\":true,\"intercomRegion\":\"us-west-2\",\"path\":\"/gsbc/01ECJPQ1D0Q8K4F88T3JVXQCZ4/tci/tiblotwxjbqfebabpqkt7gmqft7vu2hx\",\"baseURL\":\"https://integration.cloud.tibcoapps.com\",\"apiSpec\":{\"info\":{\"description\":\" \",\"title\":\"CreateMarketoLeadFlow\",\"version\":\"1.0.0\"},\"paths\":{\"/marketoLead\":{\"post\":{\"operationId\":\"post_marketoLead\",\"parameters\":[{\"description\":\"request body parameter\",\"in\":\"body\",\"name\":\"body\",\"required\":true,\"schema\":{\"properties\":{\"Country\":{\"type\":\"string\"},\"LeadStatus\":{\"type\":\"string\"},\"PostCode\":{\"type\":\"string\"},\"State\":{\"type\":\"string\"},\"email\":{\"type\":\"string\"},\"firstname\":{\"type\":\"string\"},\"lastname\":{\"type\":\"string\"}},\"type\":\"object\"}}],\"responses\":{\"200\":{\"description\":\"Rest Response\",\"schema\":{\"properties\":{\"Message\":{\"type\":\"string\"},\"id\":{\"type\":\"string\"}},\"type\":\"object\"}}},\"summary\":\"CreateMarketoLead\"}}},\"swagger\":\"2.0\",\"host\":\"integration.cloud.tibcoapps.com\",\"schemes\":[\"https\"],\"basePath\":\"/gsbc/01ECJPQ1D0Q8K4F88T3JVXQCZ4/tci/tiblotwxjbqfebabpqkt7gmqft7vu2hx\"}}"
+                                        "value": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"serviceId\":{\"type\":\"string\"},\"title\":{\"type\":\"string\"},\"description\":{\"type\":\"string\"},\"swaggerChecksum\":{\"type\":\"string\"},\"extAuthz\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"assurance\":{\"type\":\"string\"},\"baseURL\":{\"type\":\"string\"},\"path\":{\"type\":\"string\"},\"apiSpec\":{\"type\":\"object\",\"properties\":{\"definitions\":{\"type\":\"object\",\"properties\":{\"schema1\":{\"type\":\"object\",\"properties\":{\"properties\":{\"type\":\"object\",\"properties\":{\"Country\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"LeadStatus\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"PostCode\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"State\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"email\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"firstname\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"lastname\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}}}},\"type\":{\"type\":\"string\"}}},\"schema2\":{\"type\":\"object\",\"properties\":{\"properties\":{\"type\":\"object\",\"properties\":{\"Message\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"id\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}}}},\"type\":{\"type\":\"string\"}}}}},\"info\":{\"type\":\"object\",\"properties\":{\"description\":{\"type\":\"string\"},\"title\":{\"type\":\"string\"},\"version\":{\"type\":\"string\"}}},\"paths\":{\"type\":\"object\",\"properties\":{\"/marketoLead\":{\"type\":\"object\",\"properties\":{\"post\":{\"type\":\"object\",\"properties\":{\"consumes\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"operationId\":{\"type\":\"string\"},\"parameters\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"description\":{\"type\":\"string\"},\"in\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"},\"required\":{\"type\":\"boolean\"},\"schema\":{\"type\":\"object\",\"properties\":{\"properties\":{\"type\":\"object\",\"properties\":{\"Country\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"LeadStatus\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"PostCode\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"State\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"email\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"firstname\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"lastname\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}}}},\"type\":{\"type\":\"string\"}}}}}},\"responses\":{\"type\":\"object\",\"properties\":{\"200\":{\"type\":\"object\",\"properties\":{\"description\":{\"type\":\"string\"},\"schema\":{\"type\":\"object\",\"properties\":{\"properties\":{\"type\":\"object\",\"properties\":{\"Message\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}},\"id\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"}}}}},\"type\":{\"type\":\"string\"}}}}}}},\"summary\":{\"type\":\"string\"}}}}}}},\"swagger\":{\"type\":\"string\"},\"host\":{\"type\":\"string\"},\"schemes\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"basePath\":{\"type\":\"string\"}}},\"intercom\":{\"type\":\"boolean\"},\"intercomRegion\":{\"type\":\"string\"},\"asrPath\":{\"type\":\"string\"},\"asrOperation\":{\"type\":\"string\"}}}",
+                                        "fe_metadata": "{\"serviceId\":\"tcius-YnNhcG42Ympub2tzanpwdWZzNGN6bHl6dTdyaGRsNHk\",\"title\":\"CreateMarketoLeadFlow\",\"description\":\"Simple REST Trigger\",\"swaggerChecksum\":\"8d8d0c97e251dea41985d5a4bf5c5789be340d0d84835c6ac5f9561fedaa902c\",\"extAuthz\":[\"tenant-basic\"],\"assurance\":\"published\",\"baseURL\":\"https://integration.cloud.tibcoapps.com\",\"path\":\"/gsbc/01ECJMHE6YYF6Q37M57083BHKR/tci/bsapn6bjnoksjzpufs4czlyzu7rhdl4y\",\"apiSpec\":{\"definitions\":{\"schema1\":{\"properties\":{\"Country\":{\"type\":\"string\"},\"LeadStatus\":{\"type\":\"string\"},\"PostCode\":{\"type\":\"string\"},\"State\":{\"type\":\"string\"},\"email\":{\"type\":\"string\"},\"firstname\":{\"type\":\"string\"},\"lastname\":{\"type\":\"string\"}},\"type\":\"object\"},\"schema2\":{\"properties\":{\"Message\":{\"type\":\"string\"},\"id\":{\"type\":\"string\"}},\"type\":\"object\"}},\"info\":{\"description\":\"Simple REST Trigger\",\"title\":\"CreateMarketoLeadFlow\",\"version\":\"1.0.0\"},\"paths\":{\"/marketoLead\":{\"post\":{\"consumes\":[\"application/json\"],\"operationId\":\"post_marketoLead\",\"parameters\":[{\"description\":\"request body parameter\",\"in\":\"body\",\"name\":\"body\",\"required\":true,\"schema\":{\"properties\":{\"Country\":{\"type\":\"string\"},\"LeadStatus\":{\"type\":\"string\"},\"PostCode\":{\"type\":\"string\"},\"State\":{\"type\":\"string\"},\"email\":{\"type\":\"string\"},\"firstname\":{\"type\":\"string\"},\"lastname\":{\"type\":\"string\"}},\"type\":\"object\"}}],\"responses\":{\"200\":{\"description\":\"Rest Response\",\"schema\":{\"properties\":{\"Message\":{\"type\":\"string\"},\"id\":{\"type\":\"string\"}},\"type\":\"object\"}}},\"summary\":\"CreateMarketoLead\"}}},\"swagger\":\"2.0\",\"host\":\"integration.cloud.tibcoapps.com\",\"schemes\":[\"https\"],\"basePath\":\"/gsbc/01ECJMHE6YYF6Q37M57083BHKR/tci/bsapn6bjnoksjzpufs4czlyzu7rhdl4y\"},\"intercom\":true,\"intercomRegion\":\"us-west-2\",\"asrPath\":\"/marketoLead\",\"asrOperation\":\"post\"}"
                                     },
                                     "queryParams": {
                                         "type": "json",
@@ -395,8 +519,8 @@
                                     },
                                     "pathParams": {
                                         "type": "json",
-                                        "value": "{\"type\":\"object\",\"properties\":{}}",
-                                        "fe_metadata": "[]"
+                                        "value": "{\"type\":\"object\",\"properties\":{\"serviceAppId\":{\"type\":\"string\"}},\"required\":[]}",
+                                        "fe_metadata": "[{\"parameterName\":\"serviceAppId\",\"type\":\"string\",\"required\":false}]"
                                     },
                                     "headers": {
                                         "type": "json",
@@ -443,7 +567,7 @@
                             "input": {
                                 "Log Level": "INFO",
                                 "flowInfo": false,
-                                "message": "=string.tostring($activity[InvokeMarketoService].responseBody)"
+                                "message": "=$activity[InvokeMarketoService].responseCodes[\"200\"].Message"
                             }
                         }
                     },
@@ -454,9 +578,9 @@
                         "activity": {
                             "ref": "#create",
                             "input": {
-                                "applicationId": "4132",
-                                "artifactId": "21105",
-                                "sandboxId": "6103",
+                                "applicationId": "5853",
+                                "artifactId": "35474",
+                                "sandboxId": "6106",
                                 "processName": "CreateApprovalFlow",
                                 "data": {
                                     "mapping": {
@@ -498,9 +622,9 @@
                         "activity": {
                             "ref": "#update",
                             "input": {
-                                "applicationId": "4132",
-                                "artifactId": "21106",
-                                "sandboxId": "6103",
+                                "applicationId": "5853",
+                                "artifactId": "35475",
+                                "sandboxId": "6106",
                                 "processName": "Waive",
                                 "caseRef": "=$activity[CreateShipmentWaiverCase].caseRef",
                                 "data": {
@@ -577,48 +701,90 @@
     ],
     "properties": [
         {
-            "name": "MySQL.tci_mysql_aws.Host",
+            "name": "MySQL.CRMDB.Host",
             "type": "string",
             "value": "mysqltciinstance.ccvct4moy0lt.us-east-1.rds.amazonaws.com"
         },
         {
-            "name": "MySQL.tci_mysql_aws.Port",
+            "name": "MySQL.CRMDB.Port",
             "type": "float64",
             "value": 3306
         },
         {
-            "name": "MySQL.tci_mysql_aws.DatabaseName",
+            "name": "MySQL.CRMDB.Database_Name",
             "type": "string",
             "value": "CustomerDB"
         },
         {
-            "name": "MySQL.tci_mysql_aws.User",
+            "name": "MySQL.CRMDB.User",
             "type": "string",
             "value": "admin123"
         },
         {
-            "name": "MySQL.tci_mysql_aws.Password",
+            "name": "MySQL.CRMDB.Password",
             "type": "string",
-            "value": "SECRET:mIh8bKLCGTPYgiP/c3vO127H1AmtTtvN"
+            "value": "SECRET:YoZBSG5tgJfC4hG5DPcUzDYNb+W5z88m"
+        },
+        {
+            "name": "MySQL.CRMDB.Maximum_Open_Connections",
+            "type": "float64",
+            "value": 0
+        },
+        {
+            "name": "MySQL.CRMDB.Maximum_Idle_Connections",
+            "type": "float64",
+            "value": 2
+        },
+        {
+            "name": "MySQL.CRMDB.Maximum_Connection_Lifetime",
+            "type": "string",
+            "value": 0
+        },
+        {
+            "name": "MySQL.CRMDB.Maximum_Connection_Retry_Attempts",
+            "type": "float64",
+            "value": 3
+        },
+        {
+            "name": "MySQL.CRMDB.Connection_Retry_Delay",
+            "type": "float64",
+            "value": 5
+        },
+        {
+            "name": "MySQL.CRMDB.Connection_Timeout",
+            "type": "float64",
+            "value": 20
         }
     ],
     "connections": {
-        "57cf1770-c05e-11ea-af65-b3f8d72afe7f": {
-            "id": "57cf1770-c05e-11ea-af65-b3f8d72afe7f",
-            "name": "tci_mysql_aws",
+        "917315c0-52cb-11ec-9839-83c2ee3ff9fb": {
+            "id": "917315c0-52cb-11ec-9839-83c2ee3ff9fb",
+            "name": "CRMDB",
             "ref": "#connection",
+            "isGlobal": false,
             "settings": {
-                "name": "tci_mysql_aws",
+                "name": "CRMDB",
                 "description": "",
-                "host": "=$property[\"MySQL.tci_mysql_aws.Host\"]",
-                "port": "=$property[\"MySQL.tci_mysql_aws.Port\"]",
-                "databaseName": "=$property[\"MySQL.tci_mysql_aws.DatabaseName\"]",
-                "user": "=$property[\"MySQL.tci_mysql_aws.User\"]",
-                "password": "=$property[\"MySQL.tci_mysql_aws.Password\"]",
-                "onprem": false
+                "host": "=$property[\"MySQL.CRMDB.Host\"]",
+                "port": "=$property[\"MySQL.CRMDB.Port\"]",
+                "databaseName": "=$property[\"MySQL.CRMDB.Database_Name\"]",
+                "user": "=$property[\"MySQL.CRMDB.User\"]",
+                "password": "=$property[\"MySQL.CRMDB.Password\"]",
+                "maxopenconnection": "=$property[\"MySQL.CRMDB.Maximum_Open_Connections\"]",
+                "maxidleconnection": "=$property[\"MySQL.CRMDB.Maximum_Idle_Connections\"]",
+                "connmaxlifetime": "=$property[\"MySQL.CRMDB.Maximum_Connection_Lifetime\"]",
+                "maxconnectattempts": "=$property[\"MySQL.CRMDB.Maximum_Connection_Retry_Attempts\"]",
+                "connectionretrydelay": "=$property[\"MySQL.CRMDB.Connection_Retry_Delay\"]",
+                "connectiontimeout": "=$property[\"MySQL.CRMDB.Connection_Timeout\"]",
+                "onprem": false,
+                "tlsconfig": false,
+                "tlsparam": "Required",
+                "cacert": "",
+                "clientcert": "",
+                "clientkey": "",
+                "validatecert": false
             }
         }
     },
-    "contrib": "W3sicmVmIjoiZ2l0LnRpYmNvLmNvbS9naXQvcHJvZHVjdC9pcGFhcy93aS1jb250cmliLmdpdC9jb250cmlidXRpb25zL0dlbmVyYWwiLCJzM2xvY2F0aW9uIjoiVGliY28vR2VuZXJhbCJ9LHsicmVmIjoiZ2l0LnRpYmNvLmNvbS9naXQvcHJvZHVjdC9pcGFhcy93aS1teXNxbC5naXQvc3JjL2FwcC9NeVNRTCIsInMzbG9jYXRpb24iOiJUaWJjby9NeVNRTCJ9LHsicmVmIjoiZW1lYS1zd2ktc3ZuLmVtZWEudGliY28uY29tL3N2bi9BcmllbC90Y2ktbGl2ZWFwcHMvdHJ1bmsvTGl2ZUFwcHMiLCJzM2xvY2F0aW9uIjoiVGliY28vTGl2ZUFwcHMifV0=",
-    "fe_metadata": "UEsDBAoAAAAIAEFn9lCrqSRGFQAAABMAAAAIAAAAYXBwLmpzb26rViopykxPTy1yy8kvL1ayio6tBQBQSwECFAAKAAAACABBZ/ZQq6kkRhUAAAATAAAACAAAAAAAAAAAAAAAAAAAAAAAYXBwLmpzb25QSwUGAAAAAAEAAQA2AAAAOwAAAAAA"
+    "contrib": "W3sicmVmIjoiZ2l0LnRpYmNvLmNvbS9naXQvcHJvZHVjdC9pcGFhcy93aS1jb250cmliLmdpdC9jb250cmlidXRpb25zL0dlbmVyYWwiLCJzM2xvY2F0aW9uIjoiVGliY28vR2VuZXJhbCJ9LHsicmVmIjoiZ2l0LnRpYmNvLmNvbS9naXQvcHJvZHVjdC9pcGFhcy93aS1teXNxbC5naXQvc3JjL2FwcC9NeVNRTCIsInMzbG9jYXRpb24iOiJUaWJjby9NeVNRTCJ9LHsicmVmIjoiZW1lYS1zd2ktc3ZuLmVtZWEudGliY28uY29tL3N2bi9BcmllbC90Y2ktbGl2ZWFwcHMvdHJ1bmsvTGl2ZUFwcHMiLCJzM2xvY2F0aW9uIjoiVGliY28vTGl2ZUFwcHMifV0="
 }
